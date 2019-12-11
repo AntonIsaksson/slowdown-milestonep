@@ -9,8 +9,9 @@ body {
 
 /* -----------------------Navbar */
 .navbar {
-    background-color: rgba(33, 51, 83, 0.7);
-    border-bottom: 1px solid rgba(166, 161, 91, 0.7);
+    background-color: /* #141414;*/ rgba(20, 20, 20, 0.7);
+    box-shadow: 0 0 2px 2px /* #141414;*/ rgba(20, 20, 20, 0.7);
+    /*border-bottom: 1px solid rgba(166, 161, 91, 0.7);*/
 }
 
 .menulist {
@@ -19,17 +20,21 @@ body {
 
 .nav-link {
     font-size: 1.1rem;
-    text-transform: uppercase;
-    margin-right: .5rem;
+    
+    margin: 0rem 1rem 0;
+    letter-spacing: .5px;
 }
 
 .nav-link:hover {
-    border-bottom: 1.5px solid #81A6DC;
+    border-bottom: 1px solid #81A6DC;
 }
 
-.active {
-    border-bottom: 1.5px solid #BADCF6;
+.navbar-brand img {
+    max-height: 2.6rem;
+    width: 5rem;
+    margin: 0 4rem 0;
 }
+
 
 
 @media (min-width:992px){
@@ -55,11 +60,11 @@ body {
 
 .bgimage {
     background-image: url("../images/IMG_7549.JPG");
-    filter: brightness(50%);
+    filter: brightness(70%);
     position: fixed;
     width: 100%;
     height: 100%;
-    top: 59px;
+   /* top: 59px;*/
     left: 0;
     background-size: cover;
     background-position: center;
@@ -71,15 +76,18 @@ body {
     width: 100%;
     max-width: 100%;
     position: absolute; /*makes the text to stick on the landing page (incl. with "top" property) and not fixed on the "about" section */
-    top: 20%;
+    top: 16%;
     z-index: 1; /*just to make sure it's visible on all browsers*/
 }
 
 .caption h3 {
-    color: white;
+    
     font-size: 4rem;
     text-transform: uppercase;
     padding-bottom: .2rem;
+    text-shadow: 2px 2px 4px #082b34;
+    font-weight: 400;
+    color: #fafafa;
 }
 
 .caption h4 {
@@ -88,7 +96,6 @@ body {
     padding-bottom: 2rem;
     font-weight: 400;
     font-style: italic;
-    
 }
 
 .caption .btn {
@@ -102,7 +109,7 @@ body {
 
 @media (min-width:1250px) {
     .caption {
-        right: 20%;
+        right: 15%;
     }
 }
 
