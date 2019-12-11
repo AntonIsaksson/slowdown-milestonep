@@ -9,7 +9,8 @@ body {
 
 /* -----------------------Navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(33, 51, 83, 0.7);
+    border-bottom: 1px solid rgba(166, 161, 91, 0.7);
 }
 
 .menulist {
@@ -24,10 +25,90 @@ body {
 
 .nav-link:hover {
     border-bottom: 1.5px solid #81A6DC;
-    padding-bottom: 0;
 }
 
-/*.navbar-brand img {
-    max-height: 3rem;
-} */
+.active {
+    border-bottom: 1.5px solid #BADCF6;
+}
+
+
+@media (min-width:992px){
+    
+    .nav-link:hover{
+        padding-bottom: 0;
+    }
+    
+    .active {
+        padding-bottom: 0;
+    }
+    
+}
+
+/* -----------------------Home Page - Background Image */
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+
+.bgimage {
+    background-image: url("../images/IMG_7549.JPG");
+    filter: brightness(50%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 59px;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+/* -----------------------Home Page - Caption */
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute; /*makes the text to stick on the landing page (incl. with "top" property) and not fixed on the "about" section */
+    top: 20%;
+    z-index: 1; /*just to make sure it's visible on all browsers*/
+}
+
+.caption h3 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: .2rem;
+}
+
+.caption h4 {
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    
+}
+
+.caption .btn {
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    top: 80%;
+    padding: .5rem 1.1rem;
+    font-size: .9rem;
+}
+
+@media (min-width:1250px) {
+    .caption {
+        right: 20%;
+    }
+}
+
+/* -----------------------Jumbotron 1 - Rooms */
+
+.jumbotron {
+    height: 100vh;
+}
 
