@@ -2,4 +2,32 @@
 
 body {
     font-family: "Quicksand", sans-serif;
+    color: #fafafa;
+    margin: 0;
+    padding: 0;
 }
+
+/* -----------------------Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menulist {
+    margin-right: 1rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-right: .5rem;
+}
+
+.nav-link:hover {
+    border-bottom: 1.5px solid #81A6DC;
+    padding-bottom: 0;
+}
+
+/*.navbar-brand img {
+    max-height: 3rem;
+} */
+
