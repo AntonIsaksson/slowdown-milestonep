@@ -11,20 +11,20 @@
     <title>Slow Down Resort | Thailand</title>
 </head>
 
-<body data-spy="scroll" data-target="#nav-menu">
+<body data-spy="scroll" data-target="#nav-menu" data-offset="50">
 
 <!-----------------------------------------------------Home Page-->
     <!--Navbar-->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <!--Logo-->
-            <a href="#" class="navbar-brand d-none d-lg-block"><!--Slow Down--><img src="assets/images/nyloggasd.png"></a>
+            <a href="#" class="navbar-brand d-none d-lg-block"><!--Slow Down--><!--<img src="assets/images/nyloggasd.png">--></a>
             <!--"Burger" Icon-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu"><span class="navbar-toggler-icon"></span></button>
             <!--Menu Items (#nav-menu)-->
-            <div class="collapse navbar-collapse" id="nav-menu">
+            <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse" id="nav-menu"> <!--Problem(!!): data-target+data-collapse makes full screen navbar jump (see devtools, adds "height:22px" when clicked). Take away classes=toggler link do not close when clicked-->
                 <ul class="navbar-nav ml-auto menulist">
-                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
                     <li class="nav-item"><a href="#booking" class="nav-link">Booking</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
@@ -37,7 +37,7 @@
     </nav>
 
     <!--Home Page Image-->
-    <div class="container">
+    <div class="container" id="home">
         <div class="bgimage"></div>
     </div>
 
@@ -50,11 +50,12 @@
     <!-------------------------------------------------"Rooms" Section-->
     <div class="container-fluid rooms-container no-gutters" id="rooms">
         <div class="row rooms">
-            <div class="col-12"><h2 class="sub-heading">Rooms</h2></div>
+            <div class="col-12"><h2 class="sub-heading sub-heading-beige">Rooms</h2></div>
+            <hr>
             <!--- Card 1 - Bungalows -->
             <div class="col-lg-4 col-md-6">
                 <div class="card rooms-card">
-                    <img src="assets/images/bungalow.jpg" class="card-img card-img-top">
+                    <div class="card-img card-img-top bungalows-img"></div>
                     <div class="card-body">
                         <h3 class="card-title">Bungalows</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -64,7 +65,7 @@
             <!--- Card 2 - Villas -->
             <div class="col-lg-4 col-md-6">
                     <div class="card rooms-card">
-                        <img src="assets/images/villa.jpg" class="card-img card-img-top" >
+                        <div class="card-img card-img-top villas-img"></div>
                         <div class="card-body">
                             <h3 class="card-title">Villas</h3>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -74,7 +75,7 @@
                 <!--- Card 3 - Apartments -->
             <div class="col-lg-4">
                     <div class="card rooms-card">
-                        <img src="assets/images/apartment.jpg" class="card-img card-img-top fixed-center">
+                        <div class="card-img card-img-top apartments-img"></div>
                         <div class="card-body">
                             <h3 class="card-title">Apartments</h3>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -84,6 +85,26 @@
         
         </div>
     </div>
+
+    <!-------------------------------------------------"Rooms" Section-->
+    <div class="container-fluid booking-container no-gutters" id="booking">
+            <div class="row booking">
+                <div class="col-12"><h2 class="sub-heading sub-heading-blue">Booking</h2></div>
+                <!--- Card 1 - Bungalows -->
+                <div class="col-lg-4 col-md-6">
+                    
+                </div>
+                <!--- Card 2 - Villas -->
+                <div class="col-lg-4 col-md-6">
+                
+                </div>
+                <!--- Card 3 - Apartments -->
+                <div class="col-lg-4">
+                
+                </div>
+            
+            </div>
+        </div>
 
 
 
