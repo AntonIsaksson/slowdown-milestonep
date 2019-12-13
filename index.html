@@ -17,13 +17,11 @@
     <!--Navbar-->
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <!--Logo-->
-            <a href="#" class="navbar-brand d-none d-lg-block"><!--Slow Down--><!--<img src="assets/images/nyloggasd.png">--></a>
             <!--"Burger" Icon-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu"><span class="navbar-toggler-icon"></span></button>
             <!--Menu Items (#nav-menu)-->
             <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse" id="nav-menu"> <!--Problem(!!): data-target+data-collapse makes full screen navbar jump (see devtools, adds "height:22px" when clicked). Take away classes=toggler link do not close when clicked-->
-                <ul class="navbar-nav ml-auto menulist">
+                <ul class="navbar-nav mx-auto menulist">
                     <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
                     <li class="nav-item"><a href="#booking" class="nav-link">Booking</a></li>
@@ -50,12 +48,33 @@
     <!-------------------------------------------------"Rooms" Section-->
     <div class="container-fluid rooms-container no-gutters" id="rooms">
         <div class="row rooms">
-            <div class="col-12"><h2 class="sub-heading sub-heading-beige">Rooms</h2></div>
-            <hr>
+            <div class="col-12"><h2 class="sub-heading sub-heading-beige">Rooms</h2><hr></div>
+            
             <!--- Card 1 - Bungalows -->
             <div class="col-lg-4 col-md-6">
-                <div class="card rooms-card">
-                    <div class="card-img card-img-top bungalows-img"></div>
+                <div class="card bg-transparent border-0 rooms-card">
+                    
+                    <div class="card-img card-img-top <!--bungalows-img-->">
+                        <div id="carouselcontrols" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" style="background-image: url('assets/images/bungalow.jpg');" alt="First slide">
+                                </div>
+                                <div class="carousel-item" style="background-image: url('assets/images/apartment.jpg');" alt="Second slide">
+                                </div>
+                                <div class="carousel-item" style="background-image: url('assets/images/villa.jpg');" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselcontrols" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselcontrols" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    
                     <div class="card-body">
                         <h3 class="card-title">Bungalows</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -64,7 +83,7 @@
             </div>
             <!--- Card 2 - Villas -->
             <div class="col-lg-4 col-md-6">
-                    <div class="card rooms-card">
+                    <div class="card bg-transparent border-0 rooms-card">
                         <div class="card-img card-img-top villas-img"></div>
                         <div class="card-body">
                             <h3 class="card-title">Villas</h3>
@@ -74,7 +93,7 @@
                 </div>
                 <!--- Card 3 - Apartments -->
             <div class="col-lg-4">
-                    <div class="card rooms-card">
+                    <div class="card bg-transparent border-0 rooms-card">
                         <div class="card-img card-img-top apartments-img"></div>
                         <div class="card-body">
                             <h3 class="card-title">Apartments</h3>

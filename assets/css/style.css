@@ -11,25 +11,25 @@ body {
 
 .sub-heading {    /* <-----All Pages Headings */
     color: #fafafaf1;
-    padding-top: 1rem;
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: .5px;
+    text-transform: uppercase;
 }
 
 .sub-heading-beige {
     text-shadow: 2px 2px 4px rgb(163, 153, 137);
-    padding-top: 57px;
+    padding-top: 75px;
 }
 
 .sub-heading-blue {
     text-shadow: 2px 2px 4px #273953;
-    padding-top: 57px;
+    padding-top: 75px;
 }
 
 hr {
     position: relative;
-    width: 90%;
+    width: 60%;
     clear: both;     
 }
 /* -----------------------Navbar */
@@ -53,14 +53,6 @@ hr {
 .nav-link:hover {
     color: #0f1722;
     border-bottom: 1px solid rgb(212, 205, 190);
-}
-
-.navbar-brand img {
-    position: fixed;
-    top: .4rem;
-    height: 3.1rem;
-    width: 6.5rem;
-    margin-left: 1rem;
 }
 
 
@@ -119,7 +111,7 @@ hr {
     width: 100%;
     max-width: 100%;
     position: absolute; /*makes the text to stick on the landing page (incl. with "top" property) and not fixed on the "about" section */
-    top: 16%;
+    top: 10%;
     z-index: 1; /*just to make sure it's visible on all browsers*/
 }
 
@@ -173,16 +165,26 @@ hr {
 }
 
 /* -------Cards */
+.card {
+    box-shadow: 0px 0px 0px grey;
+    transition:  box-shadow .6s ease-out;
+    box-shadow: .8px .9px 3px grey;
+}
+                        /*Taken from: https://codepen.io/Sarathkumar/post/css-hover-card-smooth-shadow*/
+.card:hover{ 
+   box-shadow: 1px 8px 20px grey;
+   transition:  box-shadow .6s ease-in;
+}
 
 .rooms-card {
     margin-bottom: 2rem;
 }
 
 .card-body {
-    color: slategray;
+    color: rgb(144, 148, 151);
 }
 
-.bungalows-img {
+.bungalows {
     background: url("../images/bungalow.jpg");
 }
 
@@ -194,6 +196,15 @@ hr {
     background: url("../images/apartment.jpg");
 }
 
+.carousel-item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 19rem;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
 .card-img {
     background-repeat: no-repeat;
     background-position: center;
