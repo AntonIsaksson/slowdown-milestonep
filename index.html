@@ -23,8 +23,8 @@
             <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse" id="nav-menu"> <!--Problem(!!): data-target+data-collapse makes full screen navbar jump (see devtools, adds "height:22px" when clicked). Take away classes=toggler link do not close when clicked-->
                 <ul class="navbar-nav mx-auto menulist">
                     <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
-                    <li class="nav-item"><a href="#booking" class="nav-link">Booking</a></li>
+                    <li class="nav-item"><a href="#rooms" class="nav-link">Rooms&Booking</a></li>
+                    <li class="nav-item"><a href="#area" class="nav-link">Resort Area</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
@@ -35,44 +35,52 @@
     </nav>
 
     <!--Home Page Image-->
-    <div class="container" id="home">
-        <div class="bgimage"></div>
+    <div class="container-fluid container-fluid-hero" id="home">
+        <div class="home-wrap">
+            <div class="bgimage-home"></div>
+        </div>
+        <!--Home Page Caption-->
+        <div class="caption">
+            <h3>Slow Down Resort</h3>
+            <h4>There is another way of life...</h4>
+        </div>
     </div>
 
-    <!--Home Page Caption-->
-    <div class="caption text-center">
-        <h3>Slow Down Resort</h3>
-        <h4>There is another way of life...</h4>
-    </div>
+    
 
-    <!-------------------------------------------------"Rooms" Section-->
+    <!-------------------------------------------------"Rooms&Booking" Section-->
     <div class="container-fluid rooms-container no-gutters" id="rooms">
         <div class="row rooms">
-            <div class="col-12"><h2 class="sub-heading sub-heading-beige">Rooms</h2><hr></div>
+            <div class="col-12"><h2 class="sub-heading sub-heading-rooms">Rooms</h2><hr></div>
             
             <!--- Card 1 - Bungalows -->
             <div class="col-lg-4 col-md-6">
                 <div class="card bg-transparent border-0 rooms-card">
-                    
-                    <div class="card-img card-img-top <!--bungalows-img-->">
-                        <div id="carouselcontrols" class="carousel slide" data-ride="carousel">
+                    <div class="card-img card-img-top">
+                        <!--- Carousel -->
+                        <div id="bungalow-arrows" class="carousel slide"  data-interval="false" data-ride="carousel">
                             <div class="carousel-inner">
+                                <!--- Pic.1 -->
                                 <div class="carousel-item active" style="background-image: url('assets/images/bungalow.jpg');" alt="First slide">
                                 </div>
+                                <!--- Pic.2 -->
                                 <div class="carousel-item" style="background-image: url('assets/images/apartment.jpg');" alt="Second slide">
                                 </div>
+                                <!--- Pic.3 -->
                                 <div class="carousel-item" style="background-image: url('assets/images/villa.jpg');" alt="Third slide">
                                 </div>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselcontrols" role="button" data-slide="prev">
+                            <!--- Arrow Left -->
+                            <a class="carousel-control-prev" href="#bungalow-arrows" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#carouselcontrols" role="button" data-slide="next">
+                            <!--- Arrow Right -->
+                            <a class="carousel-control-next" href="#bungalow-arrows" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
-                        </div>
+                        </div> <!--/Carousel-->
                     </div>
                     
                     <div class="card-body">
@@ -84,7 +92,33 @@
             <!--- Card 2 - Villas -->
             <div class="col-lg-4 col-md-6">
                     <div class="card bg-transparent border-0 rooms-card">
-                        <div class="card-img card-img-top villas-img"></div>
+                        <div class="card-img card-img-top">
+                            <!--- Carousel -->
+                            <div id="villa-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <!--- Pic.1 -->
+                                    <div class="carousel-item active" style="background-image: url('assets/images/villa.jpg');" alt="First slide">
+                                    </div>
+                                    <!--- Pic.2 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/apartment.jpg');" alt="Second slide">
+                                    </div>
+                                    <!--- Pic.3 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/bungalow.jpg');" alt="Third slide">
+                                    </div>
+                                </div>
+                                <!--- Arrow Left -->
+                                <a class="carousel-control-prev" href="#villa-arrows" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <!--- Arrow Right -->
+                                <a class="carousel-control-next" href="#villa-arrows" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div> <!--/Carousel-->
+                        </div>
+
                         <div class="card-body">
                             <h3 class="card-title">Villas</h3>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -94,7 +128,33 @@
                 <!--- Card 3 - Apartments -->
             <div class="col-lg-4">
                     <div class="card bg-transparent border-0 rooms-card">
-                        <div class="card-img card-img-top apartments-img"></div>
+                        <div class="card-img card-img-top">
+                            <!--- Carousel -->
+                            <div id="apartment-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <!--- Pic.1 -->
+                                    <div class="carousel-item active" style="background-image: url('assets/images/apartment.jpg');" alt="First slide">
+                                    </div>
+                                    <!--- Pic.2 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/bungalow.jpg');" alt="Second slide">
+                                    </div>
+                                    <!--- Pic.3 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/villa.jpg');" alt="Third slide">
+                                    </div>
+                                </div>
+                                <!--- Arrow Left -->
+                                <a class="carousel-control-prev" href="#apartment-arrows" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <!--- Arrow Right -->
+                                <a class="carousel-control-next" href="#apartment-arrows" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div> <!--/Carousel-->
+                        </div>
+                        
                         <div class="card-body">
                             <h3 class="card-title">Apartments</h3>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,25 +165,29 @@
         </div>
     </div>
 
-    <!-------------------------------------------------"Rooms" Section-->
-    <div class="container-fluid booking-container no-gutters" id="booking">
-            <div class="row booking">
-                <div class="col-12"><h2 class="sub-heading sub-heading-blue">Booking</h2></div>
-                <!--- Card 1 - Bungalows -->
-                <div class="col-lg-4 col-md-6">
-                    
-                </div>
-                <!--- Card 2 - Villas -->
-                <div class="col-lg-4 col-md-6">
-                
-                </div>
-                <!--- Card 3 - Apartments -->
-                <div class="col-lg-4">
-                
-                </div>
-            
-            </div>
+    <!-------------------------------------------------"Area" Section-->
+    <div class="container-fluid area-container" id="area">
+        <div class="area-wrap">
+            <div class="row area"></div>
         </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row area-col">
+            <div class="col-md-5 area-col-left"><h2 class="sub-heading sub-heading-area">Area</h2></div>
+            <div class="col-md-5 offset-1 area-col-right"></div>
+        </div>
+    </div>
+    <!--<div class="row area-col">
+        <div class="area-col-left-bg"></div>
+            <div class="col-md-5 area-col-left"><h2 class="sub-heading sub-heading-area">Area</h2><hr id="hr-area"></div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="area-col-left-bg">
+            <div class="col-md-5 area-col-right"></div>
+        </div>
+    </div>     -->       
+
 
 
 
