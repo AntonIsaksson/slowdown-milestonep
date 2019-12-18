@@ -11,7 +11,7 @@
     <title>Slow Down Resort | Thailand</title>
 </head>
 
-<body data-spy="scroll" data-target="#nav-menu" data-offset="50">
+<body data-spy="scroll" data-target="#nav-menu" data-offset="70">
 
 <!-----------------------------------------------------Home Page-->
     <!--Navbar-->
@@ -22,10 +22,10 @@
             <!--Menu Items (#nav-menu)-->
             <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse" id="nav-menu"> <!--Problem(!!): data-target+data-collapse makes full screen navbar jump (see devtools, adds "height:22px" when clicked). Take away classes=toggler link do not close when clicked-->
                 <ul class="navbar-nav mx-auto menulist">
-                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#rooms" class="nav-link">Rooms&Booking</a></li>
-                    <li class="nav-item"><a href="#area" class="nav-link">Resort Area</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link data-scroll active">Home</a></li>
+                    <li class="nav-item"><a href="#rooms" class="nav-link data-scroll">Rooms&Booking</a></li>
+                    <li class="nav-item"><a href="#area" class="nav-link data-scroll">Resort Area</a></li>
+                    <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
@@ -84,7 +84,7 @@
                     </div>
                     
                     <div class="card-body">
-                        <h3 class="card-title">Bungalows</h3>
+                        <h3 class="card-title">Bungalows</h3><hr>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                         </div>
 
                         <div class="card-body">
-                            <h3 class="card-title">Villas</h3>
+                            <h3 class="card-title">Villas</h3><hr>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                         </div>
                         
                         <div class="card-body">
-                            <h3 class="card-title">Apartments</h3>
+                            <h3 class="card-title">Apartments</h3><hr>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
@@ -174,26 +174,31 @@
     
     <div class="container-fluid">
         <div class="row area-col">
-            <div class="col-md-5 area-col-left"><h2 class="sub-heading sub-heading-area">Area</h2></div>
+            <div class="col-md-5 area-col-left"><h2 class="sub-heading sub-heading-area">Area</h2><hr><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sapiente excepturi voluptas incidunt, aut numquam atque, consectetur possimus quisquam delectus dignissimos doloremque eos totam temporibus consequuntur, pariatur minima architecto error assumenda ratione voluptate nostrum omnis hic. In accusamus cumque quam molestias dolorem ab esse aut perferendis recusandae, eos maiores vel dolorum minus officiis eveniet! Reprehenderit adipisci nobis nostrum id dolor molestias, vero, doloribus itaque, maxime beatae sint mollitia non eligendi.</p></div>
             <div class="col-md-5 offset-1 area-col-right"></div>
         </div>
-    </div>
-    <!--<div class="row area-col">
-        <div class="area-col-left-bg"></div>
-            <div class="col-md-5 area-col-left"><h2 class="sub-heading sub-heading-area">Area</h2><hr id="hr-area"></div>
+    </div>      
+
+    <!-------------------------------------------------"About Us" Section-->
+    <!--<div class="container-fluid rooms-container no-gutters" id="about-us">
+        <div class="row rooms">
+            <div class="col-12"><h2 class="sub-heading sub-heading-rooms">About Us</h2><hr></div>
         </div>
-        <div class="col-md-2"></div>
-        <div class="area-col-left-bg">
-            <div class="col-md-5 area-col-right"></div>
-        </div>
-    </div>     -->       
+    </div>-->
 
 
 
-
-<!--- Script Source Files -->
+<!------------------------------------------------------------------------ Script Source Files -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<!--Smooth Scroll - taken from source: https://github.com/cferdinandi/smooth-scroll-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.polyfills.js" integrity="sha256-k6FBqpTYTvkmmCLAaYnWFv0eim3Sot8PoKE3BpFYTfk=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(function (){
+        var scroll = new SmoothScroll('a[href*="#"]');
+    });
+</script>
 
 </body>
 </html>
