@@ -32,7 +32,6 @@ p {
 /* -----------------------Navbar */
 .navbar {
     background-color: #243650;
-    box-shadow: 0 0 1px 1px #3c5882;
     text-decoration: none;
     min-height: 60px;
     position: fixed;
@@ -41,7 +40,7 @@ p {
 .nav-item {
     transition: border-bottom .6s ease-in;
     font-size: 1.1rem;
-    margin: 0rem 2rem 0;
+    margin: 0 2rem 0;
     letter-spacing: .5px;
     padding: 0;
 }
@@ -59,6 +58,12 @@ p {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(163, 153, 137, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");  
 }
 
+.navbar-toggler:focus {
+    flex: none;
+    outline: none;
+    box-shadow: rgb(163, 153, 137);
+}
+
 .active {
     color: #fafafa;
 }
@@ -73,6 +78,10 @@ p {
         padding-bottom: 0;
     }
     
+}
+
+.d-sm-flex.d-block.flex-sm-nowrap {
+    text-align: center;
 }
 
 /* -----------------------Home Page - Background Image */
@@ -115,7 +124,6 @@ p {
     top: 30%;
     z-index: 1; /*just to make sure it's visible on all browsers*/
     text-align: center;
-    margin-right: 2rem;
 }
 
 .caption h3 {
@@ -153,7 +161,8 @@ p {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(212, 205, 190);
+    background-color: rgb(233, 219, 171);
+    /*background-color: rgb(212, 205, 190);*/
     margin: 0;
     text-align: center;
 }
@@ -206,7 +215,61 @@ p {
     -webkit-transition: all .5s ease-in-out;
 }
 
+/* -------Booking */
 
+.booking-btn {
+    position: relative;
+    width: 10rem;
+    background-color: rgb(203, 194, 154);
+    color: ivory;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+
+    box-shadow: 0px 0px 0px grey;
+    transition:  box-shadow .6s ease-out;
+    box-shadow: .8px .9px 3px grey;
+}
+
+.booking-btn:hover {
+    box-shadow: 1px 5px 20px grey;
+    transition:  box-shadow .6s ease-in;
+}
+
+
+.booking-btn i {
+    color: ivory;
+}
+
+/* --Form */
+.booking-form {
+    padding: 2rem 2rem 1rem;
+}
+
+ .duration {
+    margin: .6rem 0 0;
+ }
+
+ .duration p{
+     text-align: left;
+     padding-left: 1rem;
+     color: rgb(255, 255, 255);
+     font-size: 1.2rem;
+ }
+
+.datepicker {
+    color: rgb(121, 117, 100);
+}
+
+
+ /* --Area Picture*/
+ .booking-col-right {
+    background-image: url('../images/slowdownarea.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80vh;
+}
 /* ----------------------------------------------------Resort Area Page */
 
 .area-container {
@@ -246,15 +309,6 @@ p {
     transition:  box-shadow 1s ease-in-out;
 }
 
-.area-col-right {
-    background-image: url('../images/slowdownarea.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 80vh;
-    margin-top: 4rem;
-    left: 3.4rem;
-}
 
 @media (min-width:768px) {
     .area-col-left {
