@@ -168,19 +168,19 @@
         <hr>
         <!--Form-->
         <div class="collapse" id="collapseExample">
-                <div class="row col-12">
+                <div class="row col-12 booking-container">
                     <form class="booking-form col-md-6">  
                         <div class="form-row">
-                            <!--Form Row 1-->
+                            <!--Form Row 1 (Name+Email)-->
                             <div class="form-group col-md-6">
-                                <input type="name" class="form-control" id="inputEmail4" placeholder="Full Name">
+                                <input type="name" class="form-control" id="inputEmail4" placeholder="Full Name" required>
                             </div>
                             <div class="form-group col-md-6">                       
-                                <input type="email" class="form-control" id="inputPassword4" placeholder="Email">
+                                <input type="email" class="form-control" id="inputPassword4" placeholder="Email" required>
                             </div>
-                            <!--Form Row 2-->
+                            <!--Form Row 2 (Quantity)-->
                             <div class="form-group col-md-4">                       
-                                <input type="quantity" class="form-control" id="inputPassword4" placeholder="Number of People">
+                                <input type="quantity" class="form-control" id="inputPassword4" placeholder="Number of People" required>
                             </div>
                             <div class="form-group col-md-4">
                                 <select class="form-control" id="formcontrol-adults">
@@ -210,21 +210,51 @@
                                     <option>Children - 9</option>
                                 </select>
                             </div>
-                            <!--Form Row 3-->
+                            <!--Form Row 3 (Period of Stay)-->
                             <div class="col-12 duration">
-                                <p>Desired Period of Stay: </p>
+                                <p>Desired Period of Stay (aproximately): </p>
                             </div>
                             <div class="form-group col-md-6">
-                                <input class="datepicker" placeholder="From Date:" id="datepickerfrom"/>
+                                <input class="datepicker" placeholder="From Date:" id="datepickerfrom" required/>
                             </div>
                             <div class="form-group col-md-6">
-                                <input class="datepicker" placeholder="To Date:" id="datepickerto"/>
+                                <input class="datepicker" placeholder="To Date:" id="datepickerto" required/>
                             </div>
+                            <!--Form Row 4 (Accomodation Preference-->
+                            <div class="col-md-6 duration preference-container">
+                                <div class="col-12 preference">
+                                    <p>Specific Accomodation Preference: </p>
+                                </div>
+                                <div class="col-12 preference">
+                                    <div class="form-group">                       
+                                        <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 1 (ex: Villa 1)">
+                                    </div>
+                                </div>
+                                <div class="col-12 preference">
+                                    <div class="form-group">                       
+                                        <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 2 (ex: Villa 2)">
+                                    </div>
+                                </div>
+                                <div class="col-12 preference">
+                                    <div class="form-group">                       
+                                        <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 3 (ex: Villa 3)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="col-12 duration preference">
+                                    <p>Other Preferences: </p>
+                                </div>
+                                <div class="form-group col-12 preference">
+                                    <textarea class="form-control otherpref" placeholder="(Ex: Floor.1/2/3, Babycrib, Close to Ocean, etc.)" name="otherpref" id="otherpref" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+                            
                         </div>
 
-                        <button type="submit" class="btn btn-light">Send Booking Request!</button>
+                        <button type="submit" class="btn btn-outline-primary">Send Booking Request!</button>
                     </form> <!--End Form-->
-                    <div class="col-md-5 offset-1 booking-col-right"></div>
+                    <div class="col-md-4 offset-1 booking-col-right"></div>
                 </div>
         </div> 
         

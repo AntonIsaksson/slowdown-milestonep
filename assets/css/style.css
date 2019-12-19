@@ -31,7 +31,7 @@ p {
 }
 /* -----------------------Navbar */
 .navbar {
-    background-color: #243650;
+    background-color: /*#243650;*/#3f4c5f;
     text-decoration: none;
     min-height: 60px;
     position: fixed;
@@ -161,8 +161,7 @@ p {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(233, 219, 171);
-    /*background-color: rgb(212, 205, 190);*/
+    background-color: rgb(219, 206, 174);
     margin: 0;
     text-align: center;
 }
@@ -220,12 +219,13 @@ p {
 .booking-btn {
     position: relative;
     width: 10rem;
-    background-color: rgb(203, 194, 154);
+    background-color: rgb(211, 201, 172);
     color: ivory;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    border: none;
+    border: 1px solid ivory;
+    padding: 0;
 
     box-shadow: 0px 0px 0px grey;
     transition:  box-shadow .6s ease-out;
@@ -237,14 +237,36 @@ p {
     transition:  box-shadow .6s ease-in;
 }
 
+.booking-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 .booking-btn i {
     color: ivory;
 }
 
+.btn-outline-primary {
+    color: #3f4c5f;
+    border: 1px solid #66758c;
+}
+
+.btn-outline-primary:hover {
+    background-color: #67758a;
+    border: 1px solid ivory;
+}
+
+.booking-container {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fafafa;
+}
 /* --Form */
 .booking-form {
+    margin-left: 1rem;
     padding: 2rem 2rem 1rem;
+    box-shadow: 1px 5px 20px grey;
+    background-color: rgb(211, 201, 172);
 }
 
  .duration {
@@ -253,7 +275,7 @@ p {
 
  .duration p{
      text-align: left;
-     padding-left: 1rem;
+     
      color: rgb(255, 255, 255);
      font-size: 1.2rem;
  }
@@ -262,13 +284,31 @@ p {
     color: rgb(121, 117, 100);
 }
 
+.preference {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.otherpref {
+    max-height: 9.1rem;
+}
+
 
  /* --Area Picture*/
  .booking-col-right {
     background-image: url('../images/slowdownarea.png');
     background-repeat: no-repeat;
     background-size: contain;
-    height: 80vh;
+    height: 70vh;
+    padding: 0;
+    filter: sepia(50%);
+    transform: scale(1);
+	transition: all 0.6s ease-in-out;
+}
+
+.booking-col-right:hover {
+    filter: sepia(10%);
+    transform: scale(1.05);
 }
 /* ----------------------------------------------------Resort Area Page */
 
