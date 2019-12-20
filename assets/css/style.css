@@ -154,7 +154,7 @@ p {
 /* ----------------------------------------------------Rooms Page */
 
 .rooms-container {
-    padding: 0 0 0; 
+    padding: 0 1rem 0;
 }
 
 .rooms {
@@ -242,6 +242,10 @@ p {
     box-shadow: none;
 }
 
+.booking-btn a {
+    color: ivory;
+    text-decoration: none;
+}
 
 .booking-btn i {
     color: ivory;
@@ -257,16 +261,26 @@ p {
     border: 1px solid ivory;
 }
 
-.booking-container {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #fafafa;
+.booking-wrap {
+    padding: 1rem 0 3rem;
+    background-color: #777f8b;
+    margin: 1rem 0 0;
 }
+
+.sub-heading-booking {
+    text-shadow: 2px 2px 4px #3f4c5f;
+    padding: 60px 0 0;
+}
+.sub-heading-booking~hr {
+    padding-bottom: 1rem;
+}
+
 /* --Form */
 .booking-form {
     margin-left: 1rem;
     padding: 2rem 2rem 1rem;
     box-shadow: 1px 5px 20px grey;
-    background-color: rgb(211, 201, 172);
+    background-color: rgb(219, 206, 174);
 }
 
  .duration {
@@ -334,29 +348,60 @@ p {
     text-align: center;
     background-size: cover;
     background-position: center;
-    filter: brightness(50%);
+    filter: brightness(70%);
     z-index: -1;
 }
 
-.area-col-left {
-    height: 80vh;
-    background-color: rgba(150, 161, 169, 0.2);
-    margin: 4rem 1rem 0;
+.heading-gallery-container {
+    width: 100%;
+    max-width: 100%;
+    position: absolute; /*makes the text to stick on the landing page (incl. with "top" property) and not fixed on the "about" section */
+    top: 30%;
+    z-index: 1; /*just to make sure it's visible on all browsers*/
+    text-align: center;
 }
 
-.area-col-left:hover {
-    box-shadow: 0 0 2px 2px rgba(164, 166, 181, 0.5);
-    transition:  box-shadow 1s ease-in-out;
-}
+
 
 
 @media (min-width:768px) {
-    .area-col-left {
+    .area-col {
         left: 3.4rem;
-        margin: 4rem 0 0;
+        margin: 1rem 0 0;
     }
 
     .sub-heading-area {
         padding-top: 75px;
     }
+}
+
+
+/* ----------------------------------------------------Resort Area Gallery */
+.gallery-nice {
+    margin: 0;
+    padding: 0;
+    min-width: 80vw;
+}
+
+
+.gallery-nice.scid-gallery a:hover{
+    opacity: 0.8;
+}
+  
+.gallery-nice.scid-gallery .item img{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.4s;
+}
+  
+.gallery-nice.scid-gallery .item{
+    margin-bottom: 20px;
+}
+  
+@media (min-width: 576px) {
+  
+    .gallery-nice.scid-gallery .scale-on-hover:hover{
+      transform: scale(1.05);
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+    }
+
 }

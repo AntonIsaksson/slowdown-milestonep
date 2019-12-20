@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse" id="nav-menu"> <!--Problem(!!): data-target+data-collapse makes full screen navbar jump (see devtools, adds "height:22px" when clicked). Take away classes=toggler link do not close when clicked-->
                 <ul class="navbar-nav mx-auto menulist">
                     <li class="nav-item"><a href="#home" class="nav-link data-scroll active">Home</a></li>
-                    <li class="nav-item"><a href="#rooms" class="nav-link data-scroll">Rooms&Booking</a></li>
+                    <li class="nav-item"><a href="#rooms" class="nav-link data-scroll">Rooms & Booking</a></li>
                     <li class="nav-item"><a href="#area" class="nav-link data-scroll">Resort Area</a></li>
                     <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
@@ -49,8 +49,9 @@
 
     
 
-    <!-------------------------------------------------"Rooms&Booking" Section-->
+    <!-------------------------------------------------"Rooms & Booking" Section-->
     <div class="container-fluid rooms rooms-container no-gutters" id="rooms">
+        <!--Rooms Sliders-->
         <div class="row">
             <div class="col-12"><h2 class="sub-heading sub-heading-rooms">Rooms</h2><hr></div>
             <!--- Card 1 - Bungalows -->
@@ -61,13 +62,13 @@
                         <div id="bungalow-arrows" class="carousel slide"  data-interval="false" data-ride="carousel">
                             <div class="carousel-inner">
                                 <!--- Pic.1 -->
-                                <div class="carousel-item active" style="background-image: url('assets/images/bungalow.jpg');" alt="First slide">
+                                <div class="carousel-item active" style="background-image: url('assets/images/balcony-guitar.jpg');" alt="First slide">
                                 </div>
                                 <!--- Pic.2 -->
-                                <div class="carousel-item" style="background-image: url('assets/images/apartment.jpg');" alt="Second slide">
+                                <div class="carousel-item" style="background-image: url('assets/images/bung-bed.jpg');" alt="Second slide">
                                 </div>
                                 <!--- Pic.3 -->
-                                <div class="carousel-item" style="background-image: url('assets/images/villa.jpg');" alt="Third slide">
+                                <div class="carousel-item" style="background-image: url('assets/images/bungalow.jpg');" alt="Third slide">
                                 </div>
                             </div>
                             <!--- Arrow Left -->
@@ -100,10 +101,13 @@
                                     <div class="carousel-item active" style="background-image: url('assets/images/villa.jpg');" alt="First slide">
                                     </div>
                                     <!--- Pic.2 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/apartment.jpg');" alt="Second slide">
+                                    <div class="carousel-item" style="background-image: url('assets/images/hammock.jpg');" alt="Second slide">
                                     </div>
                                     <!--- Pic.3 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/bungalow.jpg');" alt="Third slide">
+                                    <div class="carousel-item" style="background-image: url('assets/images/villa8-7.jpg');" alt="Third slide">
+                                    </div>
+                                    <!--- Pic.4 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/villa3fl.jpg');" alt="Fourth slide">
                                     </div>
                                 </div>
                                 <!--- Arrow Left -->
@@ -133,13 +137,16 @@
                             <div id="apartment-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
                                 <div class="carousel-inner">
                                     <!--- Pic.1 -->
-                                    <div class="carousel-item active" style="background-image: url('assets/images/apartment.jpg');" alt="First slide">
+                                    <div class="carousel-item active" style="background-image: url('assets/images/sofaapt.jpg');" alt="First slide">
                                     </div>
                                     <!--- Pic.2 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/bungalow.jpg');" alt="Second slide">
+                                    <div class="carousel-item" style="background-image: url('assets/images/oldapartment.jpg');" alt="Second slide">
                                     </div>
                                     <!--- Pic.3 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/villa.jpg');" alt="Third slide">
+                                    <div class="carousel-item" style="background-image: url('assets/images/apartment.jpg');" alt="Third slide">
+                                    </div>
+                                    <!--- Pic.4 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/aptbalcony-fl1.jpg');" alt="Fourth slide">
                                     </div>
                                 </div>
                                 <!--- Arrow Left -->
@@ -163,12 +170,16 @@
             </div>
         </div>
         <!--Booking Button-->
-        <button class="col-12 btn booking-btn mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Book A Room!<br><i class="fas fa-caret-down"></i>
-        </button>
-        <hr>
-        <!--Form-->
+        <button class="col-12 btn booking-btn mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <a class="data-scroll" href="#booking">Book A Room!<br><i class="fas fa-caret-down"></i></a></button>
+        
+        
         <div class="collapse" id="collapseExample">
-                <div class="row col-12 booking-container">
+                <div class="row col-12 booking-wrap" id="booking" >
+                    <div class="col-12">
+                        <h2 class="sub-heading sub-heading-booking">Booking</h2><hr>
+                    </div>
+                    <!--Form-->
                     <form class="booking-form col-md-6">  
                         <div class="form-row">
                             <!--Form Row 1 (Name+Email)-->
@@ -264,22 +275,54 @@
     <!-------------------------------------------------"Area" Section-->
     <div class="container-fluid area-container" id="area">
         <div class="area-wrap">
-            <div class="row area"></div>
+            <div class="area"></div>
         </div>
-    </div>
-    
-    <div class="container-fluid">
-        <div class="row area-col">
-            <div class="col-md-5 area-col-left"><h2 class="sub-heading sub-heading-area">Area</h2><hr><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sapiente excepturi voluptas incidunt, aut numquam atque, consectetur possimus quisquam delectus dignissimos doloremque eos totam temporibus consequuntur, pariatur minima architecto error assumenda ratione voluptate nostrum omnis hic. In accusamus cumque quam molestias dolorem ab esse aut perferendis recusandae, eos maiores vel dolorum minus officiis eveniet! Reprehenderit adipisci nobis nostrum id dolor molestias, vero, doloribus itaque, maxime beatae sint mollitia non eligendi.</p></div>
+        
+        
+        <!--Area Heading-->
+        <div class="row heading-gallery-container">
+            <div class="area-col">
+                <h2 class="sub-heading sub-heading-area mx-auto">Area</h2><hr>
+            </div>
+        </div>
+
+        <!--Gallery-->
+        <div class="gallery-nice scid-gallery container mx-auto">
+            <div class="row heading-gallery-container">
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="lightbox" href="assets/images/hammock.JPG">
+                        <img class="img-fluid image scale-on-hover" src="assets/images/hammock.JPG">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="lightbox" href="assets/images/homep.JPG">
+                        <img class="img-fluid image scale-on-hover" src="assets/images/homep.JPG">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="lightbox" href="assets/images/oldapartment.jpg">
+                        <img class="img-fluid image scale-on-hover" src="assets/images/oldapartment.jpg">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="lightbox" href="assets/images/slowdownarea.png">
+                        <img class="img-fluid image scale-on-hover" src="assets/images/surfpic.jpg">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="lightbox" href="assets/images/sofaapt.JPG">
+                        <img class="img-fluid image scale-on-hover" src="assets/images/sofaapt.JPG">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="lightbox" href="assets/images/villa.jpg">
+                        <img class="img-fluid image scale-on-hover" src="assets/images/villa.jpg">
+                    </a>
+                </div>
+            </div>
+        
         </div>
     </div>      
-
-    <!-------------------------------------------------"About Us" Section-->
-    <!--<div class="container-fluid rooms-container no-gutters" id="about-us">
-        <div class="row rooms">
-            <div class="col-12"><h2 class="sub-heading sub-heading-rooms">About Us</h2><hr></div>
-        </div>
-    </div>-->
 
 
 
