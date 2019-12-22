@@ -31,7 +31,7 @@ p {
 }
 /* -----------------------Navbar */
 .navbar {
-    background-color: /*#243650;*/#3f4c5f;
+    background-color: /*#243650;*/rgba(63, 76, 95,0.7);
     text-decoration: none;
     min-height: 60px;
     position: fixed;
@@ -40,9 +40,9 @@ p {
 .nav-item {
     transition: border-bottom .6s ease-in;
     font-size: 1.1rem;
+    font-weight: 500;
     margin: 0 2rem 0;
     letter-spacing: .5px;
-    padding: 0;
 }
 
 .nav-item:hover {
@@ -80,9 +80,9 @@ p {
     
 }
 
-.d-sm-flex.d-block.flex-sm-nowrap {
-    text-align: center;
-}
+
+
+
 
 /* -----------------------Home Page - Background Image */
 
@@ -153,9 +153,7 @@ p {
 
 /* ----------------------------------------------------Rooms Page */
 
-.rooms-container {
-    padding: 0 1rem 0;
-}
+
 
 .rooms {
     position: relative;
@@ -164,6 +162,7 @@ p {
     background-color: rgb(219, 206, 174);
     margin: 0;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .sub-heading-rooms {
@@ -172,6 +171,10 @@ p {
 }
 
 /* -------Cards */
+.card-container {
+    padding: 0 1rem 0;
+}
+
 .card {
     box-shadow: 0px 0px 0px grey;
     transition:  box-shadow .6s ease-out;
@@ -214,7 +217,17 @@ p {
     -webkit-transition: all .5s ease-in-out;
 }
 
-/* -------Booking */
+.carousel-indicators li {
+    border-radius: 33%;
+    height: 4px;
+    width: 30px;
+    background-color: rgb(214, 205, 177);
+    margin: 0 1rem 0;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------------Booking */
 
 .booking-btn {
     position: relative;
@@ -262,9 +275,7 @@ p {
 }
 
 .booking-wrap {
-    padding: 1rem 0 3rem;
-    background-color: #777f8b;
-    margin: 1rem 0 0;
+    background-color: #7c7e80;
 }
 
 .sub-heading-booking {
@@ -324,84 +335,14 @@ p {
     filter: sepia(10%);
     transform: scale(1.05);
 }
-/* ----------------------------------------------------Resort Area Page */
 
-.area-container {
-    position: relative;
-    padding: 0;
-}
-
-.area-wrap {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-}
-
-.area {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    background-image: url(../images/surfpic.jpg);
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    filter: brightness(70%);
-    z-index: -1;
-}
-
-.heading-gallery-container {
-    width: 100%;
-    max-width: 100%;
-    position: absolute; /*makes the text to stick on the landing page (incl. with "top" property) and not fixed on the "about" section */
-    top: 30%;
-    z-index: 1; /*just to make sure it's visible on all browsers*/
-    text-align: center;
-}
-
-
-
-
-@media (min-width:768px) {
-    .area-col {
-        left: 3.4rem;
-        margin: 1rem 0 0;
-    }
-
-    .sub-heading-area {
-        padding-top: 75px;
+@media (min-width: 992px) {
+    .booking-wrap {
+        padding: 1rem 0 5rem;
     }
 }
 
 
-/* ----------------------------------------------------Resort Area Gallery */
-.gallery-nice {
-    margin: 0;
-    padding: 0;
-    min-width: 80vw;
-}
 
 
-.gallery-nice.scid-gallery a:hover{
-    opacity: 0.8;
-}
-  
-.gallery-nice.scid-gallery .item img{
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-    transition: 0.4s;
-}
-  
-.gallery-nice.scid-gallery .item{
-    margin-bottom: 20px;
-}
-  
-@media (min-width: 576px) {
-  
-    .gallery-nice.scid-gallery .scale-on-hover:hover{
-      transform: scale(1.05);
-      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
-    }
 
-}

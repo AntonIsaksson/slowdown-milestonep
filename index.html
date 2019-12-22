@@ -12,7 +12,7 @@
     <title>Slow Down Resort | Thailand</title>
 </head>
 
-<body data-spy="scroll" data-target="#nav-menu" data-offset="70">
+<body data-spy="scroll" data-target="#nav-menu">
 
 <!-----------------------------------------------------Home Page-->
     <!--Navbar-->
@@ -50,281 +50,228 @@
     
 
     <!-------------------------------------------------"Rooms & Booking" Section-->
-    <div class="container-fluid rooms rooms-container no-gutters" id="rooms">
+    <div class="container-fluid rooms no-gutters" id="rooms">
         <!--Rooms Sliders-->
-        <div class="row">
-            <div class="col-12"><h2 class="sub-heading sub-heading-rooms">Rooms</h2><hr></div>
-            <!--- Card 1 - Bungalows -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card bg-transparent border-0 rooms-card">
-                    <div class="card-img card-img-top">
-                        <!--- Carousel -->
-                        <div id="bungalow-arrows" class="carousel slide"  data-interval="false" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <!--- Pic.1 -->
-                                <div class="carousel-item active" style="background-image: url('assets/images/balcony-guitar.jpg');" alt="First slide">
-                                </div>
-                                <!--- Pic.2 -->
-                                <div class="carousel-item" style="background-image: url('assets/images/bung-bed.jpg');" alt="Second slide">
-                                </div>
-                                <!--- Pic.3 -->
-                                <div class="carousel-item" style="background-image: url('assets/images/bungalow.jpg');" alt="Third slide">
-                                </div>
-                            </div>
-                            <!--- Arrow Left -->
-                            <a class="carousel-control-prev" href="#bungalow-arrows" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <!--- Arrow Right -->
-                            <a class="carousel-control-next" href="#bungalow-arrows" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div> <!--/Carousel-->
-                    </div>
-                    
-                    <div class="card-body">
-                        <h3 class="card-title">Bungalows</h3><hr>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!--- Card 2 - Villas -->
-            <div class="col-lg-4 col-md-6">
+        <div class="card-container">
+            <div class="row">
+                <div class="col-12"><h2 class="sub-heading sub-heading-rooms">Rooms</h2><hr></div>
+                <!--- Card 1 - Bungalows -->
+                <div class="col-lg-4 col-md-6">
                     <div class="card bg-transparent border-0 rooms-card">
                         <div class="card-img card-img-top">
                             <!--- Carousel -->
-                            <div id="villa-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
+                            <div id="bungalow-arrows" class="carousel slide carousel-fade"  data-interval="false" data-ride="carousel">
+                                <ol class="carousel-indicators mx-auto">
+                                    <li data-target="#bungalow-arrows" data-slide-to="0" class="active"></li>
+                                    <li data-target="#bungalow-arrows" data-slide-to="1"></li>
+                                    <li data-target="#bungalow-arrows" data-slide-to="2"></li>
+                                </ol>
                                 <div class="carousel-inner">
                                     <!--- Pic.1 -->
-                                    <div class="carousel-item active" style="background-image: url('assets/images/villa.jpg');" alt="First slide">
+                                    <div class="carousel-item active" style="background-image: url('assets/images/balcony-guitar.jpg');" alt="First slide">
                                     </div>
                                     <!--- Pic.2 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/hammock.jpg');" alt="Second slide">
+                                    <div class="carousel-item" style="background-image: url('assets/images/bung-bed.jpg');" alt="Second slide">
                                     </div>
                                     <!--- Pic.3 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/villa8-7.jpg');" alt="Third slide">
-                                    </div>
-                                    <!--- Pic.4 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/villa3fl.jpg');" alt="Fourth slide">
+                                    <div class="carousel-item" style="background-image: url('assets/images/bungalow.jpg');" alt="Third slide">
                                     </div>
                                 </div>
                                 <!--- Arrow Left -->
-                                <a class="carousel-control-prev" href="#villa-arrows" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <!--- Arrow Right -->
-                                <a class="carousel-control-next" href="#villa-arrows" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div> <!--/Carousel-->
-                        </div>
-
-                        <div class="card-body">
-                            <h3 class="card-title">Villas</h3><hr>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-            </div>
-            <!--- Card 3 - Apartments -->
-            <div class="col-lg-4">
-                    <div class="card bg-transparent border-0 rooms-card">
-                        <div class="card-img card-img-top">
-                            <!--- Carousel -->
-                            <div id="apartment-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <!--- Pic.1 -->
-                                    <div class="carousel-item active" style="background-image: url('assets/images/sofaapt.jpg');" alt="First slide">
-                                    </div>
-                                    <!--- Pic.2 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/oldapartment.jpg');" alt="Second slide">
-                                    </div>
-                                    <!--- Pic.3 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/apartment.jpg');" alt="Third slide">
-                                    </div>
-                                    <!--- Pic.4 -->
-                                    <div class="carousel-item" style="background-image: url('assets/images/aptbalcony-fl1.jpg');" alt="Fourth slide">
-                                    </div>
-                                </div>
-                                <!--- Arrow Left -->
-                                <a class="carousel-control-prev" href="#apartment-arrows" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <!--- Arrow Right -->
-                                <a class="carousel-control-next" href="#apartment-arrows" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
+                                
                             </div> <!--/Carousel-->
                         </div>
                         
                         <div class="card-body">
-                            <h3 class="card-title">Apartments</h3><hr>
+                            <h3 class="card-title">Bungalows</h3><hr>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-            </div>
-        </div>
-        <!--Booking Button-->
-        <button class="col-12 btn booking-btn mx-auto" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        <a class="data-scroll" href="#booking">Book A Room!<br><i class="fas fa-caret-down"></i></a></button>
-        
-        
-        <div class="collapse" id="collapseExample">
-                <div class="row col-12 booking-wrap" id="booking" >
-                    <div class="col-12">
-                        <h2 class="sub-heading sub-heading-booking">Booking</h2><hr>
-                    </div>
-                    <!--Form-->
-                    <form class="booking-form col-md-6">  
-                        <div class="form-row">
-                            <!--Form Row 1 (Name+Email)-->
-                            <div class="form-group col-md-6">
-                                <input type="name" class="form-control" id="inputEmail4" placeholder="Full Name" required>
-                            </div>
-                            <div class="form-group col-md-6">                       
-                                <input type="email" class="form-control" id="inputPassword4" placeholder="Email" required>
-                            </div>
-                            <!--Form Row 2 (Quantity)-->
-                            <div class="form-group col-md-4">                       
-                                <input type="quantity" class="form-control" id="inputPassword4" placeholder="Number of People" required>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <select class="form-control" id="formcontrol-adults">
-                                    <option>Adults - 0</option>
-                                    <option>Adults - 1</option>
-                                    <option>Adults - 2</option>
-                                    <option>Adults - 3</option>
-                                    <option>Adults - 4</option>
-                                    <option>Adults - 5</option>
-                                    <option>Adults - 6</option>
-                                    <option>Adults - 7</option>
-                                    <option>Adults - 8</option>
-                                    <option>Adults - 9</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-4">
-                                <select class="form-control" id="formcontrol-adults">
-                                    <option>Children - 0</option>
-                                    <option>Children - 1</option>
-                                    <option>Children - 2</option>
-                                    <option>Children - 3</option>
-                                    <option>Children - 4</option>
-                                    <option>Children - 5</option>
-                                    <option>Children - 6</option>
-                                    <option>Children - 7</option>
-                                    <option>Children - 8</option>
-                                    <option>Children - 9</option>
-                                </select>
-                            </div>
-                            <!--Form Row 3 (Period of Stay)-->
-                            <div class="col-12 duration">
-                                <p>Desired Period of Stay (aproximately): </p>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input class="datepicker" placeholder="From Date:" id="datepickerfrom" required/>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input class="datepicker" placeholder="To Date:" id="datepickerto" required/>
-                            </div>
-                            <!--Form Row 4 (Accomodation Preference-->
-                            <div class="col-md-6 duration preference-container">
-                                <div class="col-12 preference">
-                                    <p>Specific Accomodation Preference: </p>
-                                </div>
-                                <div class="col-12 preference">
-                                    <div class="form-group">                       
-                                        <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 1 (ex: Villa 1)">
+                </div>
+                <!--- Card 2 - Villas -->
+                <div class="col-lg-4 col-md-6">
+                        <div class="card bg-transparent border-0 rooms-card">
+                            <div class="card-img card-img-top">
+                                <!--- Carousel -->
+                                <div id="villa-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <ol class="carousel-indicators mx-auto">
+                                            <li data-target="#villa-arrows" data-slide-to="0" class="active"></li>
+                                            <li data-target="#villa-arrows" data-slide-to="1"></li>
+                                            <li data-target="#villa-arrows" data-slide-to="2"></li>
+                                            <li data-target="#villa-arrows" data-slide-to="3"></li>
+                                        </ol>
+                                        <!--- Pic.1 -->
+                                        <div class="carousel-item active" style="background-image: url('assets/images/villa.jpg');" alt="First slide">
+                                        </div>
+                                        <!--- Pic.2 -->
+                                        <div class="carousel-item" style="background-image: url('assets/images/hammock.jpg');" alt="Second slide">
+                                        </div>
+                                        <!--- Pic.3 -->
+                                        <div class="carousel-item" style="background-image: url('assets/images/villa8-7.jpg');" alt="Third slide">
+                                        </div>
+                                        <!--- Pic.4 -->
+                                        <div class="carousel-item" style="background-image: url('assets/images/villa3fl.jpg');" alt="Fourth slide">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-12 preference">
-                                    <div class="form-group">                       
-                                        <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 2 (ex: Villa 2)">
-                                    </div>
-                                </div>
-                                <div class="col-12 preference">
-                                    <div class="form-group">                       
-                                        <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 3 (ex: Villa 3)">
-                                    </div>
-                                </div>
+                                </div> <!--/Carousel-->
                             </div>
-                            <div class="col-md-6">
-                                <div class="col-12 duration preference">
-                                    <p>Other Preferences: </p>
-                                </div>
-                                <div class="form-group col-12 preference">
-                                    <textarea class="form-control otherpref" placeholder="(Ex: Floor.1/2/3, Babycrib, Close to Ocean, etc.)" name="otherpref" id="otherpref" cols="30" rows="10"></textarea>
-                                </div>
+
+                            <div class="card-body">
+                                <h3 class="card-title">Villas</h3><hr>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                </div>
+                <!--- Card 3 - Apartments -->
+                <div class="col-lg-4">
+                        <div class="card bg-transparent border-0 rooms-card">
+                            <div class="card-img card-img-top">
+                                <!--- Carousel -->
+                                <div id="apartment-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <ol class="carousel-indicators mx-auto">
+                                            <li data-target="#apartment-arrows" data-slide-to="0" class="active"></li>
+                                            <li data-target="#apartment-arrows" data-slide-to="1"></li>
+                                            <li data-target="#apartment-arrows" data-slide-to="2"></li>
+                                            <li data-target="#apartment-arrows" data-slide-to="3"></li>
+                                        </ol>
+                                        <!--- Pic.1 -->
+                                        <div class="carousel-item active" style="background-image: url('assets/images/sofaapt.jpg');" alt="First slide">
+                                        </div>
+                                        <!--- Pic.2 -->
+                                        <div class="carousel-item" style="background-image: url('assets/images/oldapartment.jpg');" alt="Second slide">
+                                        </div>
+                                        <!--- Pic.3 -->
+                                        <div class="carousel-item" style="background-image: url('assets/images/apartment.jpg');" alt="Third slide">
+                                        </div>
+                                        <!--- Pic.4 -->
+                                        <div class="carousel-item" style="background-image: url('assets/images/aptbalcony-fl1.jpg');" alt="Fourth slide">
+                                        </div>
+                                    </div>
+                                    <!--- Arrow Left -->
+                                    <a class="carousel-control-prev" href="#apartment-arrows" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <!--- Arrow Right -->
+                                    <a class="carousel-control-next" href="#apartment-arrows" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div> <!--/Carousel-->
                             </div>
                             
+                            <div class="card-body">
+                                <h3 class="card-title">Apartments</h3><hr>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
                         </div>
-
-                        <button type="submit" class="btn btn-outline-primary">Send Booking Request!</button>
-                    </form> <!--End Form-->
-                    <div class="col-md-4 offset-1 booking-col-right"></div>
                 </div>
-        </div> 
-        
-        
+            </div>
+        </div>
+            <!--Booking Button-->
+            <button class="btn booking-btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <a class="data-scroll" href="#booking">Book A Room!<br><i class="fas fa-caret-down"></i></a></button>
+            
+            <!--Booking Form and Picure-->
+            <div class="collapse booking-wrap" id="collapseExample">
+                    <div class="row col-12" id="booking" >
+                        <div class="col-12">
+                            <h2 class="sub-heading sub-heading-booking">Booking</h2><hr>
+                        </div>
+                        <!--Form-->
+                        <form class="booking-form col-md-6">  
+                            <div class="form-row">
+                                <!--Form Row 1 (Name+Email)-->
+                                <div class="form-group col-md-6">
+                                    <input type="name" class="form-control" id="inputEmail4" placeholder="Full Name" required>
+                                </div>
+                                <div class="form-group col-md-6">                       
+                                    <input type="email" class="form-control" id="inputPassword4" placeholder="Email" required>
+                                </div>
+                                <!--Form Row 2 (Quantity)-->
+                                <div class="form-group col-md-4">                       
+                                    <input type="quantity" class="form-control" id="inputPassword4" placeholder="Number of People" required>
+                                </div>
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <select class="form-control" id="formcontrol-adults">
+                                        <option>Adults - 0</option>
+                                        <option>Adults - 1</option>
+                                        <option>Adults - 2</option>
+                                        <option>Adults - 3</option>
+                                        <option>Adults - 4</option>
+                                        <option>Adults - 5</option>
+                                        <option>Adults - 6</option>
+                                        <option>Adults - 7</option>
+                                        <option>Adults - 8</option>
+                                        <option>Adults - 9</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6 col-md-4">
+                                    <select class="form-control" id="formcontrol-adults">
+                                        <option>Children - 0</option>
+                                        <option>Children - 1</option>
+                                        <option>Children - 2</option>
+                                        <option>Children - 3</option>
+                                        <option>Children - 4</option>
+                                        <option>Children - 5</option>
+                                        <option>Children - 6</option>
+                                        <option>Children - 7</option>
+                                        <option>Children - 8</option>
+                                        <option>Children - 9</option>
+                                    </select>
+                                </div>
+                                <!--Form Row 3 (Period of Stay)-->
+                                <div class="col-12 duration">
+                                    <p>Desired Period of Stay (aproximately): </p>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input class="datepicker" placeholder="From Date:" id="datepickerfrom" required/>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input class="datepicker" placeholder="To Date:" id="datepickerto" required/>
+                                </div>
+                                <!--Form Row 4 (Accomodation Preference-->
+                                <div class="col-md-6 duration preference-container">
+                                    <div class="col-12 preference">
+                                        <p>Specific Accomodation Preference: </p>
+                                    </div>
+                                    <div class="col-12 preference">
+                                        <div class="form-group">                       
+                                            <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 1 (ex: Villa 1)">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 preference">
+                                        <div class="form-group">                       
+                                            <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 2 (ex: Villa 2)">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 preference">
+                                        <div class="form-group">                       
+                                            <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 3 (ex: Villa 3)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="col-12 duration preference">
+                                        <p>Other Preferences: </p>
+                                    </div>
+                                    <div class="form-group col-12 preference">
+                                        <textarea class="form-control otherpref" placeholder="(Ex: Floor.1/2/3, Babycrib, Close to Ocean, etc.)" name="otherpref" id="otherpref" cols="30" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-primary">Send Booking Request!</button>
+                        </form> <!--End Form-->
+                        <div class="col-md-4 offset-1 booking-col-right"></div>
+                    </div>
+            </div> 
     </div>
 
-    <!-------------------------------------------------"Area" Section-->
-    <div class="container-fluid area-container" id="area">
-        <div class="area-wrap">
-            <div class="area"></div>
-        </div>
-        
-        
-        <!--Area Heading-->
-        <div class="row heading-gallery-container">
-            <div class="area-col">
-                <h2 class="sub-heading sub-heading-area mx-auto">Area</h2><hr>
-            </div>
-        </div>
-
-        <!--Gallery-->
-        <div class="gallery-nice scid-gallery container mx-auto">
-            <div class="row heading-gallery-container">
-                <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="assets/images/hammock.JPG">
-                        <img class="img-fluid image scale-on-hover" src="assets/images/hammock.JPG">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="assets/images/homep.JPG">
-                        <img class="img-fluid image scale-on-hover" src="assets/images/homep.JPG">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="assets/images/oldapartment.jpg">
-                        <img class="img-fluid image scale-on-hover" src="assets/images/oldapartment.jpg">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="assets/images/slowdownarea.png">
-                        <img class="img-fluid image scale-on-hover" src="assets/images/surfpic.jpg">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="assets/images/sofaapt.JPG">
-                        <img class="img-fluid image scale-on-hover" src="assets/images/sofaapt.JPG">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="assets/images/villa.jpg">
-                        <img class="img-fluid image scale-on-hover" src="assets/images/villa.jpg">
-                    </a>
-                </div>
-            </div>
-        
-        </div>
-    </div>      
-
-
+    
 
 <!------------------------------------------------------------------------ Script Source Files -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
