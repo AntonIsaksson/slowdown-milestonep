@@ -12,11 +12,11 @@
     <title>Slow Down Resort | Thailand</title>
 </head>
 
-<body data-spy="scroll" data-target="#nav-menu">
+<body data-spy="scroll" data-target="#nav-menu" offset="70">
 
 <!-----------------------------------------------------Home Page-->
     <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg">
         <div class="container-fluid">
             <!--"Burger" Icon-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu"><span class="navbar-toggler-icon"></span></button>
@@ -24,9 +24,9 @@
             <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse" id="nav-menu"> <!--Problem(!!): data-target+data-collapse makes full screen navbar jump (see devtools, adds "height:22px" when clicked). Take away classes=toggler link do not close when clicked-->
                 <ul class="navbar-nav mx-auto menulist">
                     <li class="nav-item"><a href="#home" class="nav-link data-scroll active">Home</a></li>
-                    <li class="nav-item"><a href="#rooms" class="nav-link data-scroll">Rooms & Booking</a></li>
-                    <li class="nav-item"><a href="#area" class="nav-link data-scroll">Resort Area</a></li>
-                    <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#rooms" class="nav-link data-scroll">Rooms</a></li>
+                    <li class="nav-item"><a href="#booking" class="nav-link data-scroll">Booking</a></li>
+                    <li class="nav-item"><a href="#restaurant" class="nav-link data-scroll">Restaurant</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                 </ul>
@@ -41,8 +41,8 @@
             <div class="bgimage-home"></div>
         </div>
         <!--Home Page Caption-->
-        <div class="caption">
-            <h3>Slow Down Resort</h3>
+        <div class="caption mx-auto">
+            <h3 class="mx-auto">Slow Down Resort</h3>
             <h4>There is another way of life...</h4>
         </div>
     </div>
@@ -61,11 +61,6 @@
                         <div class="card-img card-img-top">
                             <!--- Carousel -->
                             <div id="bungalow-arrows" class="carousel slide carousel-fade"  data-interval="false" data-ride="carousel">
-                                <ol class="carousel-indicators mx-auto">
-                                    <li data-target="#bungalow-arrows" data-slide-to="0" class="active"></li>
-                                    <li data-target="#bungalow-arrows" data-slide-to="1"></li>
-                                    <li data-target="#bungalow-arrows" data-slide-to="2"></li>
-                                </ol>
                                 <div class="carousel-inner">
                                     <!--- Pic.1 -->
                                     <div class="carousel-item active" style="background-image: url('assets/images/balcony-guitar.jpg');" alt="First slide">
@@ -78,6 +73,15 @@
                                     </div>
                                 </div>
                                 <!--- Arrow Left -->
+                                <a class="carousel-control-prev" href="#bungalow-arrows" role="button" data-slide="prev">
+                                    <span><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <!--- Arrow Right -->
+                                <a class="carousel-control-next" href="#bungalow-arrows" role="button" data-slide="next">
+                                    <span><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></span>
+                                    <span class="sr-only">Next</span>
+                                 </a>
                                 
                             </div> <!--/Carousel-->
                         </div>
@@ -93,14 +97,8 @@
                         <div class="card bg-transparent border-0 rooms-card">
                             <div class="card-img card-img-top">
                                 <!--- Carousel -->
-                                <div id="villa-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
+                                <div id="villa-arrows" class="carousel slide carousel-fade"  data-interval="false"  data-ride="carousel">
                                     <div class="carousel-inner">
-                                        <ol class="carousel-indicators mx-auto">
-                                            <li data-target="#villa-arrows" data-slide-to="0" class="active"></li>
-                                            <li data-target="#villa-arrows" data-slide-to="1"></li>
-                                            <li data-target="#villa-arrows" data-slide-to="2"></li>
-                                            <li data-target="#villa-arrows" data-slide-to="3"></li>
-                                        </ol>
                                         <!--- Pic.1 -->
                                         <div class="carousel-item active" style="background-image: url('assets/images/villa.jpg');" alt="First slide">
                                         </div>
@@ -114,6 +112,16 @@
                                         <div class="carousel-item" style="background-image: url('assets/images/villa3fl.jpg');" alt="Fourth slide">
                                         </div>
                                     </div>
+                                    <!--- Arrow Left -->
+                                    <a class="carousel-control-prev" href="#villa-arrows" role="button" data-slide="prev">
+                                        <span><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <!--- Arrow Right -->
+                                    <a class="carousel-control-next" href="#villa-arrows" role="button" data-slide="next">
+                                        <span><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
                                 </div> <!--/Carousel-->
                             </div>
 
@@ -128,14 +136,8 @@
                         <div class="card bg-transparent border-0 rooms-card">
                             <div class="card-img card-img-top">
                                 <!--- Carousel -->
-                                <div id="apartment-arrows" class="carousel slide"  data-interval="false"  data-ride="carousel">
+                                <div id="apartment-arrows" class="carousel slide carousel-fade"  data-interval="false"  data-ride="carousel">
                                     <div class="carousel-inner">
-                                        <ol class="carousel-indicators mx-auto">
-                                            <li data-target="#apartment-arrows" data-slide-to="0" class="active"></li>
-                                            <li data-target="#apartment-arrows" data-slide-to="1"></li>
-                                            <li data-target="#apartment-arrows" data-slide-to="2"></li>
-                                            <li data-target="#apartment-arrows" data-slide-to="3"></li>
-                                        </ol>
                                         <!--- Pic.1 -->
                                         <div class="carousel-item active" style="background-image: url('assets/images/sofaapt.jpg');" alt="First slide">
                                         </div>
@@ -150,15 +152,15 @@
                                         </div>
                                     </div>
                                     <!--- Arrow Left -->
-                                    <a class="carousel-control-prev" href="#apartment-arrows" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <!--- Arrow Right -->
-                                    <a class="carousel-control-next" href="#apartment-arrows" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
+                                <a class="carousel-control-prev" href="#apartment-arrows" role="button" data-slide="prev">
+                                    <span><i class="fa fa-chevron-left fa-lg" aria-hidden="true"></i></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <!--- Arrow Right -->
+                                <a class="carousel-control-next" href="#apartment-arrows" role="button" data-slide="next">
+                                    <span><i class="fa fa-chevron-right fa-lg" aria-hidden="true"></i></span>
+                                    <span class="sr-only">Next</span>
+                                 </a>
                                 </div> <!--/Carousel-->
                             </div>
                             
@@ -170,31 +172,30 @@
                 </div>
             </div>
         </div>
-            <!--Booking Button-->
-            <button class="btn booking-btn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <a class="data-scroll" href="#booking">Book A Room!<br><i class="fas fa-caret-down"></i></a></button>
+    </div>
+            
             
             <!--Booking Form and Picure-->
-            <div class="collapse booking-wrap" id="collapseExample">
-                    <div class="row col-12" id="booking" >
+            
+                    <div class="row booking-container" id="booking" >
                         <div class="col-12">
                             <h2 class="sub-heading sub-heading-booking">Booking</h2><hr>
                         </div>
                         <!--Form-->
-                        <form class="booking-form col-md-6">  
+                        <form class="booking-form col-lg-6">  
                             <div class="form-row">
                                 <!--Form Row 1 (Name+Email)-->
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-6">
                                     <input type="name" class="form-control" id="inputEmail4" placeholder="Full Name" required>
                                 </div>
-                                <div class="form-group col-md-6">                       
+                                <div class="form-group col-6">                       
                                     <input type="email" class="form-control" id="inputPassword4" placeholder="Email" required>
                                 </div>
                                 <!--Form Row 2 (Quantity)-->
                                 <div class="form-group col-md-4">                       
                                     <input type="quantity" class="form-control" id="inputPassword4" placeholder="Number of People" required>
                                 </div>
-                                <div class="form-group col-sm-6 col-md-4">
+                                <div class="form-group col-6 col-md-4">
                                     <select class="form-control" id="formcontrol-adults">
                                         <option>Adults - 0</option>
                                         <option>Adults - 1</option>
@@ -208,7 +209,7 @@
                                         <option>Adults - 9</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-sm-6 col-md-4">
+                                <div class="form-group col-6 col-md-4">
                                     <select class="form-control" id="formcontrol-adults">
                                         <option>Children - 0</option>
                                         <option>Children - 1</option>
@@ -226,10 +227,10 @@
                                 <div class="col-12 duration">
                                     <p>Desired Period of Stay (aproximately): </p>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-6">
                                     <input class="datepicker" placeholder="From Date:" id="datepickerfrom" required/>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-6">
                                     <input class="datepicker" placeholder="To Date:" id="datepickerto" required/>
                                 </div>
                                 <!--Form Row 4 (Accomodation Preference-->
@@ -261,15 +262,15 @@
                                         <textarea class="form-control otherpref" placeholder="(Ex: Floor.1/2/3, Babycrib, Close to Ocean, etc.)" name="otherpref" id="otherpref" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
-                                
                             </div>
-
+                            <!--Submit button-->
                             <button type="submit" class="btn btn-outline-primary">Send Booking Request!</button>
                         </form> <!--End Form-->
-                        <div class="col-md-4 offset-1 booking-col-right"></div>
+                        <!--Picture of Area-->
+                        <div class="col-lg-4 booking-col-right"></div>
                     </div>
-            </div> 
-    </div>
+            
+    
 
     
 

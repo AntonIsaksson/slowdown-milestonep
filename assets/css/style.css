@@ -12,7 +12,7 @@ body {
 }
 
 .sub-heading {    /* <-----All Pages Headings */
-    color: #fafafaf1;
+    color: #fbf2e4;
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: .5px;
@@ -31,18 +31,16 @@ p {
 }
 /* -----------------------Navbar */
 .navbar {
-    background-color: /*#243650;*/rgba(63, 76, 95,0.7);
+    background-color: rgba(63, 76, 95,0.4);
     text-decoration: none;
-    min-height: 60px;
-    position: fixed;
+    min-height: min-content;
 }
 
 .nav-item {
     transition: border-bottom .6s ease-in;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    margin: 0 2rem 0;
-    letter-spacing: .5px;
+    letter-spacing: .8px;
 }
 
 .nav-item:hover {
@@ -51,38 +49,16 @@ p {
 }
 
 .navbar-dark .navbar-toggler {
-    border-color: rgb(163, 153, 137);    
+    border-color: rgb(179, 179, 179); /*rgb(163, 153, 137);   */ 
 }
   
 .navbar-dark .navbar-toggler-icon {  
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(163, 153, 137, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");  
-}
-
-.navbar-toggler:focus {
-    flex: none;
-    outline: none;
-    box-shadow: rgb(163, 153, 137);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(179, 179, 179, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");  
 }
 
 .active {
     color: #fafafa;
 }
-
-@media (min-width:992px){
-    
-    .nav-link:hover {
-        padding-bottom: 0;
-    }
-    
-    .active {
-        padding-bottom: 0;
-    }
-    
-}
-
-
-
-
 
 /* -----------------------Home Page - Background Image */
 
@@ -108,7 +84,6 @@ p {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    /* top: 59px;*/
     top: 0;
     left: 0;
     background-size: cover;
@@ -118,8 +93,6 @@ p {
 /* -----------------------Home Page - Caption */
 
 .caption {
-    width: 100%;
-    max-width: 100%;
     position: absolute; /*makes the text to stick on the landing page (incl. with "top" property) and not fixed on the "about" section */
     top: 30%;
     z-index: 1; /*just to make sure it's visible on all browsers*/
@@ -128,9 +101,10 @@ p {
 
 .caption h3 {
     
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: uppercase;
-    padding-bottom: .1rem;
+    margin: 0 1rem 0;
+    padding: 0 1rem .1rem;
     text-shadow: 2px 2px 4px #082b34;
     font-weight: 400;
     color: #fafafa;
@@ -138,22 +112,15 @@ p {
 
 .caption h4 {
     color: white;
-    font-size: 1.5rem;
+    font-size: .8rem;
     padding-bottom: 2rem;
     font-weight: 400;
     font-style: italic;
 }
 
 
-@media (min-width:1250px) {
-    .caption {
-        right: 10%;
-    }
-}
 
 /* ----------------------------------------------------Rooms Page */
-
-
 
 .rooms {
     position: relative;
@@ -168,6 +135,10 @@ p {
 .sub-heading-rooms {
     text-shadow: 2px 2px 4px rgb(163, 153, 137);
     padding-top: 75px;
+}
+
+.sub-heading-rooms~hr {
+    padding-bottom: 2rem;
 }
 
 /* -------Cards */
@@ -226,61 +197,36 @@ p {
     cursor: pointer;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 150%;
+}
+.carousel-control-prev i,
+.carousel-control-next i  {
+    color: #829cc6;
+}
+
+.carousel-control-prev i:hover,
+.carousel-control-next i:hover {
+    color: #f9f9fa;
+}
+
 
 /* ----------------------------------------------Booking */
 
-.booking-btn {
-    position: relative;
-    width: 10rem;
-    background-color: rgb(211, 201, 172);
-    color: ivory;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
-    border: 1px solid ivory;
-    padding: 0;
-
-    box-shadow: 0px 0px 0px grey;
-    transition:  box-shadow .6s ease-out;
-    box-shadow: .8px .9px 3px grey;
-}
-
-.booking-btn:hover {
-    box-shadow: 1px 5px 20px grey;
-    transition:  box-shadow .6s ease-in;
-}
-
-.booking-btn:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.booking-btn a {
-    color: ivory;
-    text-decoration: none;
-}
-
-.booking-btn i {
-    color: ivory;
-}
-
-.btn-outline-primary {
-    color: #3f4c5f;
-    border: 1px solid #66758c;
-}
-
-.btn-outline-primary:hover {
-    background-color: #67758a;
-    border: 1px solid ivory;
-}
-
-.booking-wrap {
+.booking-container {
     background-color: #7c7e80;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 .sub-heading-booking {
     text-shadow: 2px 2px 4px #3f4c5f;
-    padding: 60px 0 0;
+    padding: 75px 0 0;
 }
 .sub-heading-booking~hr {
     padding-bottom: 1rem;
@@ -288,9 +234,10 @@ p {
 
 /* --Form */
 .booking-form {
-    margin-left: 1rem;
-    padding: 2rem 2rem 1rem;
-    box-shadow: 1px 5px 20px grey;
+    border-radius: 1%;
+    margin: 0 1rem 0 1rem;
+    padding: 1rem;
+    box-shadow: 1px 5px 20px rgb(53, 53, 53);
     background-color: rgb(219, 206, 174);
 }
 
@@ -325,7 +272,7 @@ p {
     background-repeat: no-repeat;
     background-size: contain;
     height: 70vh;
-    padding: 0;
+    margin: 1rem 1rem 0 2rem;
     filter: sepia(50%);
     transform: scale(1);
 	transition: all 0.6s ease-in-out;
@@ -336,13 +283,61 @@ p {
     transform: scale(1.05);
 }
 
-@media (min-width: 992px) {
-    .booking-wrap {
-        padding: 1rem 0 5rem;
+
+/* ----------------------------------------------MEDIA QUERIES */
+
+@media (min-width: 497px) {
+    .caption h3 {
+        font-size: 4.5rem;
+    }
+
+    .caption h4 {
+        font-size: 1.1rem;
     }
 }
 
+@media (min-width: 992px) {
+    /* -- MQ-Navbar -- */
+    .navbar {
+        background-color: rgba(63, 76, 95,0.7);
+    }
 
+    .nav-item {
+        margin: 0 2rem 0;
+    }
+
+    .nav-link:hover {
+        padding-bottom: 0;
+    }
+    
+    .active {
+        padding-bottom: 0;
+    }
+
+    /* -- MQ-Home Page Caption -- */
+    .caption {
+        right: 10%;
+        width: 100%;
+    }
+
+    .caption h3 {
+        font-size: 5rem;
+    }
+
+    .caption h4 {
+        font-size: 1.5rem;
+    }
+
+    /* -- MQ-Booking Page -- */
+    .booking-form {
+        margin-left: 2rem;
+    }
+    
+    .booking-col-right {
+        margin: 0 1rem 0 7rem;
+    }
+
+}
 
 
 
