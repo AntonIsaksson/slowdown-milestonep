@@ -80,7 +80,7 @@ p {
 
 .bgimage-home {
     background-image: url("../images/homep.JPG");
-    filter: brightness(70%);
+    filter: brightness(100%);
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -138,6 +138,11 @@ p {
     padding-top: 75px;
 }
 
+.sub-heading-rooms i {
+    font-size: 50%;
+    text-align: center center;
+}
+
 .sub-heading-rooms~hr {
     padding-bottom: 2rem;
 }
@@ -163,9 +168,7 @@ p {
 }
 
 .card-body hr {
-    border: 1px solid #63a1b575;
-    border-radius: 0.5px;
-    background-color: #63a1b575;
+    border: 2px solid #7c7e80;
 }
 .rooms-card {
     margin-bottom: 2rem;
@@ -179,7 +182,7 @@ p {
     padding: 0.01rem;
 }
 
-.carousel-item {
+.rooms-card .carousel-item {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -333,6 +336,37 @@ p {
     left: 0;
     background-size: cover;
     background-position: center;
+}
+
+
+/* ----------------------------------------------Restaurant Page */
+
+.sub-heading-restaurant {
+        text-shadow: 2px 2px 4px rgb(163, 153, 137);
+        padding-top: 75px;
+}
+    
+.sub-heading-restaurant~hr {
+        padding-bottom: 1rem;
+    }
+
+.restaurant-card {
+    min-height: 70vh;
+}
+
+.restaurant-card .carousel-item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 70vh;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.card-img-overlay {
+    padding: 0;
+    margin: 0;
 }
 
 
