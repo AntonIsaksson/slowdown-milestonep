@@ -21,14 +21,13 @@
             <!--"Burger" Icon-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu"><span class="navbar-toggler-icon"></span></button>
             <!--Menu Items (#nav-menu)-->
-            <div class="collapse navbar-collapse" data-toggle="collapse" data-target=".navbar-collapse" id="nav-menu"> <!--Problem(!!): data-target+data-collapse makes full screen navbar jump (see devtools, adds "height:22px" when clicked). Take away classes=toggler link do not close when clicked-->
+            <div class="collapse navbar-collapse" id="nav-menu"> <!--Problem(!!): data-target+data-collapse makes full screen navbar jump (see devtools, adds "height:22px" when clicked). Take away classes=toggler link do not close when clicked-->
                 <ul class="navbar-nav mx-auto menulist">
                     <li class="nav-item"><a href="#home" class="nav-link data-scroll active">Home</a></li>
                     <li class="nav-item"><a href="#rooms" class="nav-link data-scroll">Rooms</a></li>
                     <li class="nav-item"><a href="#booking" class="nav-link data-scroll">Booking</a></li>
                     <li class="nav-item"><a href="#restaurant" class="nav-link data-scroll">Restaurant</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Gallery</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link data-scroll">Contact</a></li>
                 </ul>
             </div>
 
@@ -89,7 +88,7 @@
                             
                             <div class="card-body">
                                 <h3 class="card-title">Bungalows</h3><hr>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Our bungalows is best suited for the couple or smaller family. They all have,at least, 2 bedsides and a bathroom with shower and WC.</p>
                             </div>
                         </div>
                     </div>
@@ -128,7 +127,7 @@
 
                                 <div class="card-body">
                                     <h3 class="card-title">Villas</h3><hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">Our Villas differ a lot in size and style, but in general they are Big and very well suited for the big family (or families..).</p>
                                 </div>
                             </div>
                     </div>
@@ -167,7 +166,7 @@
                                 
                                 <div class="card-body">
                                     <h3 class="card-title">Apartments</h3><hr>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">Somewhere in between the size of our bungalows and villas, we have our many apartments. Usually between 2-4 bedrooms.</p>
                                 </div>
                             </div>
                     </div>
@@ -272,7 +271,7 @@
                                 </div>
             </div>
             <!--Submit button-->
-            <button type="submit" class="btn btn-outline-primary">Send Booking Request!</button>
+            <button type="submit" class="booking-btn btn btn-outline-light">Send Booking Request!</button>
         </form> <!--End Form-->
         <!--Picture of Area-->
         <div class="col-lg-4 mx-auto booking-col-right"></div>
@@ -295,7 +294,7 @@
             <div class="row">
                 <div class="col-12"><h2 class="sub-heading sub-heading-restaurant">Restaurant</h2><hr></div>
                 <!--- Card 1 - Bungalows -->
-                <div class="col-10 offset-1">
+                <div class="col-lg-6">
                     <div class="card bg-transparent border-0 restaurant-card">
                         <div class="card-img card-img-overlay">
                             <!--- Carousel -->
@@ -304,16 +303,20 @@
                                     <!--- Pic.1 -->
                                     <div class="carousel-item active" style="background-image: url('assets/images/restaurantfront.jpg');" alt="First slide">
                                     </div>
-                                    <div class="card-img-overlay">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text">Last updated 3 mins ago</p>
-                                      </div>
                                     <!--- Pic.2 -->
                                     <div class="carousel-item" style="background-image: url('assets/images/thomasanders.jpg');" alt="Second slide">
                                     </div>
                                     <!--- Pic.3 -->
                                     <div class="carousel-item" style="background-image: url('assets/images/hamburgers.jpg');" alt="Third slide">
+                                    </div>
+                                    <!--- Pic.4 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/healthcafe.jpg');" alt="Fourth slide">
+                                    </div>
+                                    <!--- Pic.5 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/sofahang.jpg');" alt="Fifth slide">
+                                    </div>
+                                    <!--- Pic.6 -->
+                                    <div class="carousel-item" style="background-image: url('assets/images/wineglass.jpeg');" alt="Sixth slide">
                                     </div>
                                 </div>
                                 <!--- Arrow Left -->
@@ -329,14 +332,54 @@
                                 
                             </div> <!--/Carousel-->
                         </div>
-                        
-                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-box">
+                        <h1>Restaurant | Bar | WineShop</h1>
+                        <p class="restaurant-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, fugit obcaecati. Sunt asperiores, soluta quidem voluptatem
+                            porro a molestias iusto, magni aut minima adipisci ea labore incidunt vel iste nisi in hic odio aspernatur veritatis. 
+                            Maxime assumenda voluptatem beatae laudantium incidunt harum, vero, officiis esse reiciendis doloremque quibusdam dignissimos quae!
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h4 class="bold-text">Opening Hours</h4>
+                                <p>Monday - Friday: <bold class="bold-text">07.30 - 23.00</bold></br>
+                                    Saturday: <bold class="bold-text">08.00 - 22.00</bold></br>
+                                    Sunday: <bold class="bold-text">Closed</bold>
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <h4 class="bold-text">Happenings</h4>
+                                <p>Tuesdays: <bold class="bold-text">19.00 - Musicquiz & BBQ</bold></br>
+                                    Thursdays: <bold class="bold-text">19.00 - Tacobuffé</bold></br>
+                                    Friday: <bold class="bold-text">18.30 - Cozy Friday</bold>
+                                </p>
+                            </div>
+                        </div>
+                        <h2 class="bold-text">Welcome!</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <!--------------------------------------------------------Space Image 3-->
+    <div class="container-fluid container-space" id="home">
+        <div class="space-wrap">
+            <div class="bgimage-space-3"></div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------Contact Page-->
+    <div class="row booking-container" id="contact" >
+        <div class="col-12">
+            <h2 class="sub-heading sub-heading-booking">Contact Us!</h2><hr>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------Footer-->
+    <div class="footer"></div>
     
 
 <!------------------------------------------------------------------------ Script Source Files -->

@@ -29,6 +29,10 @@ hr {
 p {
     text-align: center;
 }
+
+.bold-text {
+    font-weight: 700;
+}
 /* -----------------------Navbar */
 .navbar {
     background-color: rgba(63, 76, 95,0.4);
@@ -39,7 +43,7 @@ p {
 .nav-item {
     transition: border-bottom .6s ease-in;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: .8px;
 }
 
@@ -94,7 +98,7 @@ p {
 
 .caption {
     position: absolute; /*makes the text to stick on the landing page (incl. with "top" property) and not fixed on the "about" section */
-    top: 30%;
+    top: 28%;
     z-index: 1; /*just to make sure it's visible on all browsers*/
     text-align: center;
 }
@@ -203,7 +207,7 @@ p {
 }
 .carousel-control-prev i,
 .carousel-control-next i  {
-    color: #829cc6;
+    color: rgba(219, 206, 174, 1);
 }
 
 .carousel-control-prev i:hover,
@@ -218,7 +222,7 @@ p {
 .container-space {
     position: relative;
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     z-index: -1;
     background-color: rgb(151, 141, 114);
 }
@@ -298,6 +302,17 @@ p {
     max-height: 9.1rem;
 }
 
+.booking-btn {
+    font-weight: 500;
+    color: #606f85;
+    border-color: #8e9cb1bf;
+}
+
+.booking-btn:hover {
+    background-color: #8e9cb1bf;
+    color: #fafafa;
+}
+
 
  /* --Area Picture*/
  .booking-col-right {
@@ -319,7 +334,7 @@ p {
 
 
 
-/* -----------------------Space Image 1 */
+/* -----------------------Space Image 2 */
 
 .bgimage-space-2 {
     background-image: url("../images/surfpic.jpg");
@@ -338,23 +353,53 @@ p {
 /* ----------------------------------------------Restaurant Page */
 
 .sub-heading-restaurant {
-        text-shadow: 2px 2px 4px rgb(163, 153, 137);
-        padding-top: 75px;
+    text-shadow: 2px 2px 4px rgb(163, 153, 137);
+    padding-top: 75px;
 }
     
 .sub-heading-restaurant~hr {
-        padding-bottom: 1rem;
-    }
+    padding-bottom: 1rem;
+}
+
+.text-box {
+    border-radius: 1%;
+    margin: 0 1rem 0 1rem;
+    padding: 1rem;
+    min-height: 65vh;
+    box-shadow: 1px 5px 20px rgb(53, 53, 53);
+    background-color: rgb(219, 206, 174);
+}
+
+.text-box p {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.restaurant-text {
+    padding: 0 1rem 0;
+}
+
+.text-box h1 {
+    font-size: 43px;
+    font-weight: 500;
+    padding: .5rem 0 1rem;
+}
+
+.text-box h4 {
+    font-size: 25px;
+}
 
 .restaurant-card {
-    min-height: 70vh;
+    min-height: 65vh;
+    border-radius: 1%;
 }
 
 .restaurant-card .carousel-item {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 65vh;
+    border-radius: 1%;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -363,6 +408,21 @@ p {
 .card-img-overlay {
     padding: 0;
     margin: 0;
+}
+
+/* -----------------------Space Image 3 */
+
+.bgimage-space-3 {
+    background-image: url("../images/sunset.jpg");
+    opacity: 0.5;
+    filter: brightness(40%);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
 }
 
 
