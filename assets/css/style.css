@@ -524,13 +524,9 @@ p {
         font-weight: 500;
         padding: .5rem 0 1rem;
     }
-    
-    .restaurant-card {
-        min-height: 65vh;
-    }
+    .social-icons i {
+        font-size: 20px;
 
-    .restaurant-card .carousel-item {
-        min-height: 65vh;
     }
 }
 
@@ -586,7 +582,17 @@ p {
         min-height: 65vh;
     }
 
-    
+    .restaurant-card {
+        min-height: 65vh;
+    }
+
+    .restaurant-card .carousel-item {
+        min-height: 65vh;
+    }
+
+    .social-icons i {
+        font-size: 30px;
+    }
 }
 
 
