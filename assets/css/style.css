@@ -157,7 +157,7 @@ p {
     transition:  box-shadow .6s ease-out;
     box-shadow: .8px .9px 3px grey;
 }
-                        /*Taken from: https://codepen.io/Sarathkumar/post/css-hover-card-smooth-shadow*/
+                        /*Inspiration from: https://codepen.io/Sarathkumar/post/css-hover-card-smooth-shadow*/
 .card:hover{ 
    box-shadow: 1px 5px 20px grey;
    transition:  box-shadow .6s ease-in;
@@ -429,7 +429,7 @@ p {
 
 
 
-/* ----------------------------------------------Contact Page */
+/* ----------------------------------------------Footer/Contact Page */
 
 .contact-container {
     background-color: #a5aeb8;
@@ -463,9 +463,9 @@ p {
 
 
 
-/* ----------------------------------------------Go-to-top Button*/
+/* ----------------------------------------------Go-to-top Button (Inspiration from: https://www.youtube.com/watch?v=Vef9bxTilCU */
 
-.go-to-top {
+.go-to-top {                             
     position: fixed;
     width: 50px;
     height: 50px;
