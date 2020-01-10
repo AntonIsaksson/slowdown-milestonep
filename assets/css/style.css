@@ -526,6 +526,8 @@ p {
     }
     .social-icons i {
         font-size: 20px;
+        margin: 1rem 0 0;
+        
 
     }
 }
@@ -592,6 +594,7 @@ p {
 
     .social-icons i {
         font-size: 30px;
+        margin: 1rem 1rem 0;
     }
 }
 

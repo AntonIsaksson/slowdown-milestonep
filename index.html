@@ -30,7 +30,6 @@
                     <li class="nav-item"><a href="#contact" class="nav-link data-scroll">Contact</a></li>
                 </ul>
             </div>
-
         </div>
     </nav>
 
@@ -191,84 +190,84 @@
         <!--Form-->
         <form class="booking-form col-lg-6">  
             <div class="form-row">
-                                <!--Form Row 1 (Name+Email)-->
-                                <div class="form-group col-6">
-                                    <input type="name" class="form-control" id="inputEmail4" placeholder="Full Name" required>
-                                </div>
-                                <div class="form-group col-6">                       
-                                    <input type="email" class="form-control" id="inputPassword4" placeholder="Email" required>
-                                </div>
-                                <!--Form Row 2 (Quantity)-->
-                                <div class="form-group col-md-4">                       
-                                    <input type="quantity" class="form-control" id="inputPassword4" placeholder="Number of People" required>
-                                </div>
-                                <div class="form-group col-6 col-md-4">
-                                    <select class="form-control" id="formcontrol-adults">
-                                        <option>Adults - 0</option>
-                                        <option>Adults - 1</option>
-                                        <option>Adults - 2</option>
-                                        <option>Adults - 3</option>
-                                        <option>Adults - 4</option>
-                                        <option>Adults - 5</option>
-                                        <option>Adults - 6</option>
-                                        <option>Adults - 7</option>
-                                        <option>Adults - 8</option>
-                                        <option>Adults - 9</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-6 col-md-4">
-                                    <select class="form-control" id="formcontrol-adults">
-                                        <option>Children - 0</option>
-                                        <option>Children - 1</option>
-                                        <option>Children - 2</option>
-                                        <option>Children - 3</option>
-                                        <option>Children - 4</option>
-                                        <option>Children - 5</option>
-                                        <option>Children - 6</option>
-                                        <option>Children - 7</option>
-                                        <option>Children - 8</option>
-                                        <option>Children - 9</option>
-                                    </select>
-                                </div>
-                                <!--Form Row 3 (Period of Stay)-->
-                                <div class="col-12 duration">
-                                    <p>Desired Period of Stay (aproximately): </p>
-                                </div>
-                                <div class="form-group col-6">
-                                    <input class="datepicker" placeholder="From Date:" id="datepickerfrom" required/>
-                                </div>
-                                <div class="form-group col-6">
-                                    <input class="datepicker" placeholder="To Date:" id="datepickerto" required/>
-                                </div>
-                                <!--Form Row 4 (Accomodation Preference-->
-                                <div class="col-md-6 duration preference-container">
-                                    <div class="col-12 preference">
-                                        <p>Specific Accomodation Preference: </p>
-                                    </div>
-                                    <div class="col-12 preference">
-                                        <div class="form-group">                       
-                                            <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 1 (ex: Villa 1)">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 preference">
-                                        <div class="form-group">                       
-                                            <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 2 (ex: Villa 2)">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 preference">
-                                        <div class="form-group">                       
-                                            <input type="preference" class="form-control" id="inputPassword4" placeholder="Pref. 3 (ex: Villa 3)">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="col-12 duration preference">
-                                        <p>Other Preferences: </p>
-                                    </div>
-                                    <div class="form-group col-12 preference">
-                                        <textarea class="form-control otherpref" placeholder="(Ex: Floor.1/2/3, Babycrib, Close to Ocean, etc.)" name="otherpref" id="otherpref" cols="30" rows="10"></textarea>
-                                    </div>
-                                </div>
+                <!--Form Row 1 (Name+Email)-->
+                <div class="form-group col-6">
+                    <input type="name" class="form-control" name="fname" id="fname" placeholder="Full Name" required>
+                </div>
+                <div class="form-group col-6">                       
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>
+                <!--Form Row 2 (Quantity)-->
+                <div class="form-group col-md-4">                       
+                    <input type="quantity" class="form-control" name="quantity" id="quantity" placeholder="Number of People" required>
+                </div>
+                <div class="form-group col-6 col-md-4">
+                    <select class="form-control" name="adults" id="formcontrol-adults">
+                        <option>Adults - 0</option>
+                        <option>Adults - 1</option>
+                        <option>Adults - 2</option>
+                        <option>Adults - 3</option>
+                        <option>Adults - 4</option>
+                        <option>Adults - 5</option>
+                        <option>Adults - 6</option>
+                        <option>Adults - 7</option>
+                        <option>Adults - 8</option>
+                        <option>Adults - 9</option>
+                    </select>
+                </div>
+                <div class="form-group col-6 col-md-4">
+                    <select class="form-control" name="children" id="formcontrol-adults">
+                        <option>Children - 0</option>
+                        <option>Children - 1</option>
+                        <option>Children - 2</option>
+                        <option>Children - 3</option>
+                        <option>Children - 4</option>
+                        <option>Children - 5</option>
+                        <option>Children - 6</option>
+                        <option>Children - 7</option>
+                        <option>Children - 8</option>
+                        <option>Children - 9</option>
+                    </select>
+                </div>
+                <!--Form Row 3 (Period of Stay)-->
+                <div class="col-12 duration">
+                    <p>Desired Period of Stay (aproximately): </p>
+                </div>
+                <div class="form-group col-6">
+                    <input class="datepicker" placeholder="From Date:" name="datepickerfrom" id="datepickerfrom" required/>
+                </div>
+                <div class="form-group col-6">
+                    <input class="datepicker" placeholder="To Date:" name="datepickerto" id="datepickerto" required/>
+                </div>
+                <!--Form Row 4 (Accomodation Preference-->
+                <div class="col-md-6 duration preference-container">
+                    <div class="col-12 preference">
+                        <p>Specific Accomodation Preference: </p>
+                    </div>
+                    <div class="col-12 preference">
+                        <div class="form-group">                       
+                            <input type="preference" class="form-control" name="pref-1" id="pref-1" placeholder="Pref. 1 (ex: Villa 1)">
+                        </div>
+                    </div>
+                    <div class="col-12 preference">
+                        <div class="form-group">                       
+                            <input type="preference" class="form-control" name="pref-2" id="pref-2" placeholder="Pref. 2 (ex: Villa 2)">
+                        </div>
+                    </div>
+                    <div class="col-12 preference">
+                        <div class="form-group">                       
+                            <input type="preference" class="form-control" name="pref-3" id="pref-3" placeholder="Pref. 3 (ex: Villa 3)">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="col-12 duration preference">
+                        <p>Other Preferences: </p>
+                    </div>
+                    <div class="form-group col-12 preference">
+                        <textarea class="form-control otherpref" placeholder="(Ex: Floor.1/2/3, Babycrib, Close to Ocean, etc.)" name="otherpref" id="otherpref" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
             </div>
             <!--Submit button-->
             <button type="submit" class="booking-btn btn btn-outline-light">Send Booking Request!</button>
@@ -289,11 +288,10 @@
     <!-------------------------------------------------Restaurant page-->
         
     <div class="container-fluid restaurant no-gutters" id="restaurant">
-        <!--Rooms Sliders-->
         <div class="card-container">
             <div class="row">
                 <div class="col-12"><h2 class="sub-heading sub-heading-restaurant">Restaurant</h2><hr></div>
-                <!--- Card 1 - Bungalows -->
+                <!--Restaurant Slider-->
                 <div class="col-12 col-lg-6">
                     <div class="card bg-transparent border-0 restaurant-card">
                         <div class="card-img card-img-overlay">
@@ -334,15 +332,15 @@
                         </div>
                     </div>
                 </div>
+                <!-----Restaurant Textbox-->
                 <div class="col-12 col-lg-6">
                     <div class="text-box">
-                        <h1>Restaurant | Bar | WineShop</h1>
+                        <h1 class="d-none d-sm-block">Restaurant | Bar | WineShop</h1>
                         <p class="d-none d-sm-block restaurant-text">The perfect spot to hang-out with your loved ones!</br>
                             Toast with a Strawberry Margarita in the sunset, enjoy a quite morning with fresh 
                             Colombian Coffee combined with a broad breakfast buffet, or why not have a 
                             3-course luxurious dinner with friends and family.</br> To fulfill as many whishes as 
                             possible, Slow Down Restaurant have three different types of kitchens; Thai, Western and ‘Healthy’. 
-                           
                         </p>
                         <div class="row">
                             <div class="col-md-6">
@@ -370,29 +368,32 @@
     <!-------------------------------------------------------Footer-->
     <div class="container-fluid contact-container" id="contact">
         <div class="row">
-        <div class="col-md-4">
-            <h4>Contact</h4><hr>
-            <p><bold class="bold-text">Email:</bold> name@slowdown.com</br>
-                <bold class="bold-text">Reception:</bold> +667512345678</br>
-                <bold class="bold-text">Restaurant:</bold> +667501234567
-            </p>
-            
-        </div>
-        <div class="col-md-4">
-            <h4>Adress</h4><hr>
-            <p>398 Moo 3 T.Saladan A. </br>Koh Lanta, Krabi </br>81150</p>
-        </div>
-        <div class="col-md-4 mx-auto">
-            <h4>Social</h4><hr>
-            <div class="social-icons mx-auto">
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
+            <!--- Contact -->
+            <div class="col-md-4">
+                <h4>Contact</h4><hr>
+                <p><bold class="bold-text">Email:</bold> name@slowdown.com</br>
+                    <bold class="bold-text">Reception:</bold> +667512345678</br>
+                    <bold class="bold-text">Restaurant:</bold> +667501234567
+                </p>
+            </div>
+            <!--- Adress -->
+            <div class="col-md-4">
+                <h4>Adress</h4><hr>
+                <p>398 Moo 3 T.Saladan A. </br>Koh Lanta, Krabi </br>81150</p>
+            </div>
+            <!--- Social Icons -->
+            <div class="col-md-4 mx-auto">
+                <h4>Social</h4><hr>
+                <div class="social-icons mx-auto">
+                    <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
     </div>
-    </div>
 
+    <!--------------------Go to Top Arrow-->
     <a class="go-to-top" href="#"><i class="fas fa-arrow-up"></i></a>
     
     
